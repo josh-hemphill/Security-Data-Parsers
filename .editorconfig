@@ -1,0 +1,44 @@
+# editorconfig.org
+root = true
+
+[*]
+indent_size = 2
+indent_style = tab
+tab_width = 3
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.{md,yml,yaml}]
+trim_trailing_whitespace = false
+indent_style = space
+indent_size = 2
+
+# C# Formatting Rules https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/syles-rules/csharp-formatting-options
+[*.cs]
+dotnet_diagnostic.IDE0055.severity = none
+dotnet_analyzer_diagnostic.category-Style.severity = warning
+csharp_style_namespace_declarations = file_scoped
+csharp_new_line_before_open_brace = none
+csharp_new_line_before_else = false
+csharp_new_line_before_catch = true
+csharp_new_line_before_finally = true
+csharp_new_line_before_members_in_object_initializers = true
+csharp_new_line_before_members_in_anonymous_types = true
+csharp_new_line_between_query_expression_clauses = true
+# Indentation preferences
+csharp_indent_case_contents = true
+csharp_indent_switch_labels = true
+csharp_indent_labels = one_less_than_currents
+# SPace preferences
+csharp_space_after_keywords_in_control_flow_statements = true
+#csharp_space_between_parentheses = control_flow_statements,expressions,type_casts
+csharp_space_between_method_declaration_parameter_list_parentheses = true
+csharp_space_between_method_declaration_name_and_open_parentheses = true
+csharp_space_between_method_call_parameter_list_parentheses = true
+# Allow manually aligning variable declarations
+csharp_space_around_declaration_statements = false
+# Wrapping preferences
+csharp_preserve_single_line_statements = true
+csharp_preserve_single_line_blocks = true

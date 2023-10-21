@@ -1,0 +1,8 @@
+{
+	"dotnet.defaultSolution": "SAN_Parser.sln",
+	"cSpell.words": [
+		"FASC",
+		"FASCN"
+	],
+	"code-runner.terminalRoot": ""
+}

@@ -1,0 +1,26 @@
+{
+	"dotnet.defaultSolution": "SAN_Parser.sln",
+	"cSpell.words": [
+		"FASC",
+		"FASCN"
+	],
+	"terminal.integrated.automationProfile.windows": {
+		"overrideName": "PowerShell"
+	},
+	"terminal.integrated.defaultProfile.windows": "PowerShell",
+	"csharp.format.enable": true,
+	"csharp.suppressDotnetRestoreNotification": true,
+	"omnisharp.useModernNet": true,
+	"omnisharp.useEditorFormattingSettings": true,
+	"omnisharp.organizeImportsOnFormat": true,
+	"omnisharp.enableEditorConfigSupport": true,
+	"[csharp]": {
+		"editor.maxTokenizationLineLength": 2500,
+		"editor.inlineSuggest.suppressSuggestions": false,
+		"editor.defaultFormatter": "ms-dotnettools.csharp"
+	},
+	"[dotnetProject]": {
+		"editor.defaultFormatter": "ms-dotnettools.csharp"
+	},
+	"editor.tabSize": 3
+}
