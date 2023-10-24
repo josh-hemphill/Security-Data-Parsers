@@ -18,6 +18,7 @@
 		<RepositoryUrl>https://github.com/josh-hemphill/Security-Data-Parsers</RepositoryUrl>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageTags>security,parser,binary,fascn,san,x400address,EdiPartyName</PackageTags>
+		<Version>1.0.1</Version>
 	</PropertyGroup>
 
 	<ItemGroup>
