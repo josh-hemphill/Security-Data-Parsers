@@ -18,7 +18,8 @@
 		<None Include="$(MSBuildThisFileDirectory)openssl.cnf" />
 	</ItemGroup>
 	<ItemGroup>
-		<Content Include="$(MSBuildThisFileDirectory)local.envSettings.json">
+		<Content Include="$(MSBuildThisFileDirectory)local.envSettings.json"
+			Condition="Exists('$(MSBuildThisFileDirectory)local.envSettings.json')">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</Content>
 	</ItemGroup>

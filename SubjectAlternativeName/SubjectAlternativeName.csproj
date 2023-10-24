@@ -4,7 +4,9 @@
 		<TargetFramework>net7.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
+		<OutputPath>dist</OutputPath>
 		<PublishDir>dist</PublishDir>
+		<PublishRelease>true</PublishRelease>
 		<NoWarn>$(NoWarn);IDE0022;IDE0011</NoWarn>
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
@@ -26,7 +28,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\FederalAgencySmartCredentialNumber\FederalAgencySmartCredentialNumber.csproj" />
+		<ProjectReference
+			Include="..\FederalAgencySmartCredentialNumber\FederalAgencySmartCredentialNumber.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -34,10 +37,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Update="README.md">
-	    <Pack>True</Pack>
-	    <PackagePath>\</PackagePath>
-	  </None>
+		<None Update="README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
 	</ItemGroup>
 
 	<Import Project="..\AsnUtils\AsnUtils.projitems" Label="Shared" />
