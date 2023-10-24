@@ -1,0 +1,33 @@
+name: Test
+
+on:
+  push:
+    branches:
+      - latest
+      - latest-next
+      - next
+      - beta
+      - "*.x" # maintenance releases branches
+
+  pull_request:
+    types:
+      - opened
+      - synchronize
+
+jobs:
+  test_matrix:
+    strategy:
+      matrix:
+        dotnet-version: ["3.1.x", "6.0.x", "7.0.x"]
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - run: git config --global user.name github-actions
+      - run: git config --global user.email github-actions@github.com
+      - name: Setup dotnet ${{ matrix.dotnet-version }}
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: ${{ matrix.dotnet-version }}
+      - run: dotnet test

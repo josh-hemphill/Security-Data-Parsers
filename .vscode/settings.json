@@ -1,8 +1,12 @@
 {
-	"dotnet.defaultSolution": "SAN_Parser.sln",
+	"dotnet.defaultSolution": "SecurityDataParsers.sln",
 	"cSpell.words": [
 		"FASC",
-		"FASCN"
+		"FASCN",
+		"Newtonsoft",
+		"Oids",
+		"Teletex",
+		"Xunit"
 	],
 	"terminal.integrated.automationProfile.windows": {
 		"overrideName": "PowerShell"

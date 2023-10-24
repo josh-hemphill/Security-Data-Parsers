@@ -1,0 +1,40 @@
+name: CodeCov
+on:
+  push:
+    branches:
+      - latest
+      - latest-next
+      - next
+      - beta
+      - alpha
+      - "*.x" # maintenance releases branches
+
+  pull_request:
+    types:
+      - opened
+      - synchronize
+
+jobs:
+  test_matrix:
+    strategy:
+      matrix:
+        dotnet-version: ["7.0.x"]
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - run: git config --global user.name github-actions
+      - run: git config --global user.email github-actions@github.com
+      - name: Setup dotnet ${{ matrix.dotnet-version }}
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: ${{ matrix.dotnet-version }}
+      - run: dotnet tool install -g dotnet-coverage
+      - run: dotnet test --collect:"XPlat Code Coverage"
+      - run: dotnet-coverage merge -o coverage.xml -f xml -r coverage.*
+      - name: Upload coverage reports to Codecov with GitHub Action
+        uses: codecov/codecov-action@v3
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: ./coverage.xml

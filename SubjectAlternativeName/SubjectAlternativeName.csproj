@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<PublishDir>dist</PublishDir>
+		<NoWarn>$(NoWarn);IDE0022;IDE0011</NoWarn>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="BouncyCastle.Cryptography" Version="2.2.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference
+			Include="..\FederalAgencySmartCredentialNumber\FederalAgencySmartCredentialNumber.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="X400Address\DomainDefined\" />
+	</ItemGroup>
+
+	<Import Project="..\AsnUtils\AsnUtils.projitems" Label="Shared" />
+
+</Project>
