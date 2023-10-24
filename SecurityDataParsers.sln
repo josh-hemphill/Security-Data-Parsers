@@ -15,6 +15,8 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "BinaryUtils", "BinaryUtils\
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "AsnUtils", "AsnUtils\AsnUtils.shproj", "{F7F818DF-516A-4145-A185-7087D233D022}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "TestUtils", "TestUtils\TestUtils.shproj", "{862B3065-FCA4-48ED-ABB3-4E09DBBDCB31}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -46,9 +48,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		BinaryUtils\BinaryUtils.projitems*{1d83643c-51f3-4a5f-894b-5e49fb84a9ed}*SharedItemsImports = 5
+		TestUtils\TestUtils.projitems*{1d83643c-51f3-4a5f-894b-5e49fb84a9ed}*SharedItemsImports = 5
 		BinaryUtils\BinaryUtils.projitems*{2c1c77e7-1e2a-4c18-83be-b66fa35c3538}*SharedItemsImports = 13
 		AsnUtils\AsnUtils.projitems*{85bd9843-2434-4d9d-850e-605a95a007e7}*SharedItemsImports = 5
+		TestUtils\TestUtils.projitems*{862b3065-fca4-48ed-abb3-4e09dbbdcb31}*SharedItemsImports = 13
 		BinaryUtils\BinaryUtils.projitems*{bedeefa4-b534-4d42-a8fd-a1d96dd294b9}*SharedItemsImports = 5
+		TestUtils\TestUtils.projitems*{bedeefa4-b534-4d42-a8fd-a1d96dd294b9}*SharedItemsImports = 5
 		AsnUtils\AsnUtils.projitems*{f2e88e20-f85c-4a69-af22-716d0fe318ae}*SharedItemsImports = 5
 		BinaryUtils\BinaryUtils.projitems*{f2e88e20-f85c-4a69-af22-716d0fe318ae}*SharedItemsImports = 5
 		AsnUtils\AsnUtils.projitems*{f7f818df-516a-4145-a185-7087d233d022}*SharedItemsImports = 13

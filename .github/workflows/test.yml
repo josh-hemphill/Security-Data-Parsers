@@ -22,8 +22,10 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    env:
+      SAN_PARSER_TEST_CERT_KIND: "DEFAULT_TEST"
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - run: git config --global user.name github-actions
       - run: git config --global user.email github-actions@github.com
       - name: Setup dotnet ${{ matrix.dotnet-version }}

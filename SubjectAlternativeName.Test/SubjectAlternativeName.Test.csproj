@@ -28,10 +28,6 @@
 	<ItemGroup>
 		<ProjectReference Include="..\SubjectAlternativeName\SubjectAlternativeName.csproj" />
 	</ItemGroup>
-	<ItemGroup>
-		<Content Include="local.envSettings.json">
-			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
-		</Content>
-	</ItemGroup>
 	<Import Project="..\BinaryUtils\BinaryUtils.projitems" Label="Shared" />
+	<Import Project="..\TestUtils\TestUtils.projitems" Label="Shared" />
 </Project>

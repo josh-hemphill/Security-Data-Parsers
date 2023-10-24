@@ -1,7 +1,5 @@
 # SecurityDataParsers
 
-[![NuGet](https://img.shields.io/nuget/dt/__.svg)](https://www.nuget.org/packages/__) [![NuGet](https://img.shields.io/nuget/vpre/__.svg)](https://www.nuget.org/packages/__) [![Release](https://github.com/josh-hemphill/SecurityDataParsers/actions/workflows/release.yml/badge.svg)](https://github.com/josh-hemphill/SecurityDataParsers/actions/workflows/release.yml)
-
 A collection small parsing tools to aid in extracting the underlying values in some data formats commonly found in authentication or identity certificates.
 
 <!-- cspell: disable bracketsstartstop -->
@@ -10,23 +8,28 @@ A collection small parsing tools to aid in extracting the underlying values in s
 
 #### Available Packages
 
-  - [FederalAgencySmartCredentialNumber](https://www.nuget.org/packages/)
-  - [SubjectAlternativeName](https://www.nuget.org/packages/)
+  - [FederalAgencySmartCredentialNumber](https://www.nuget.org/packages/SecurityDataParsers.FederalAgencySmartCredentialNumber)
+  
+  [![NuGet](https://img.shields.io/nuget/dt/SecurityDataParsers.FederalAgencySmartCredentialNumber.svg)](https://www.nuget.org/packages/SecurityDataParsers.FederalAgencySmartCredentialNumber) [![NuGet](https://img.shields.io/nuget/vpre/SecurityDataParsers.FederalAgencySmartCredentialNumber.svg)](https://www.nuget.org/packages/SecurityDataParsers.FederalAgencySmartCredentialNumber) [![Release](https://github.com/josh-hemphill/SecurityDataParsers/actions/workflows/release.yml/badge.svg)](https://github.com/josh-hemphill/SecurityDataParsers/actions/workflows/release.yml)
+
+  - [SubjectAlternativeName](https://www.nuget.org/packages/SecurityDataParsers.SubjectAlternativeName)
+  
+  [![NuGet](https://img.shields.io/nuget/dt/SecurityDataParsers.SubjectAlternativeName.svg)](https://www.nuget.org/packages/SecurityDataParsers.SubjectAlternativeName) [![NuGet](https://img.shields.io/nuget/vpre/SecurityDataParsers.SubjectAlternativeName.svg)](https://www.nuget.org/packages/SecurityDataParsers.SubjectAlternativeName) [![Release](https://github.com/josh-hemphill/SecurityDataParsers/actions/workflows/release.yml/badge.svg)](https://github.com/josh-hemphill/SecurityDataParsers/actions/workflows/release.yml)
 
 <br />
 
 Install one of the packages with [NuGet](https://www.nuget.org/)
 
 ```powershell
-    Install-Package FederalAgencySmartCredentialNumber
-    Install-Package SubjectAlternativeName
+    Install-Package SecurityDataParsers.FederalAgencySmartCredentialNumber
+    Install-Package SecurityDataParsers.SubjectAlternativeName
 ```
 
 Or via the .NET Core command line interface:
 
 ```shell
-    dotnet add package FederalAgencySmartCredentialNumber
-    dotnet add package SubjectAlternativeName
+    dotnet add package SecurityDataParsers.FederalAgencySmartCredentialNumber
+    dotnet add package SecurityDataParsers.SubjectAlternativeName
 ```
 
 Either commands, from Package Manager Console or .NET Core CLI, will download and install the packages.

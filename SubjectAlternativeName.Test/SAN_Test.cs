@@ -1,4 +1,5 @@
-﻿namespace SubjectAlternativeName.Test;
+﻿using TestUtils;
+namespace SubjectAlternativeName.Test;
 
 public class SAN_Test {
 
