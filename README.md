@@ -1,7 +1,7 @@
 # SecurityDataParsers
 
 [![Codecov](https://img.shields.io/codecov/c/github/josh-hemphill/Security-Data-Parsers.svg?style=?style=plastic)](https://codecov.io/gh/josh-hemphill/Security-Data-Parsers)
-[![Test](https://github.com/josh-hemphill/Security-Data-Parsers/actions/workflows/test.yml/badge.svg)](https://github.com/josh-hemphill/Security-Data-Parsers/actions/workflows/test.yml) [![Release](https://github.com/josh-hemphill/Security-Data-Parsers/actions/workflows/release.yml/badge.svg)](https://github.com/josh-hemphill/Security-Data-Parsers/actions/workflows/release.yml) [![GitHub Repo stars](https://img.shields.io/github/stars/josh-hemphill/Security-Data-Parsers?logo=github)](https://github.com/josh-hemphill/Security-Data-Parsers)
+[![Test](https://github.com/josh-hemphill/Security-Data-Parsers/actions/workflows/test.yml/badge.svg)](https://github.com/josh-hemphill/Security-Data-Parsers/actions/workflows/test.yml) [![GitHub Repo stars](https://img.shields.io/github/stars/josh-hemphill/Security-Data-Parsers?logo=github)](https://github.com/josh-hemphill/Security-Data-Parsers)
 
 A collection small parsing tools to aid in extracting the underlying values in some data formats commonly found in authentication or identity certificates.
 
@@ -32,7 +32,6 @@ Either commands, from Package Manager Console or .NET Core CLI, will download an
 
 ## TODO
 
-  - Better surfacing of the conversions to readable strings for property enums
   - Increasing test coverage
 
 ## Usage
