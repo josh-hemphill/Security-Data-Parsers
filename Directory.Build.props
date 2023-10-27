@@ -31,7 +31,7 @@
 				<PackageLicenseExpression>MIT</PackageLicenseExpression>
 				<RepoUrl>https://github.com/josh-hemphill/Security-Data-Parsers</RepoUrl>
 				<RepositoryUrl>$(RepoUrl)</RepositoryUrl>
-				<PackageProjectUrl>$(RepoUrl)/blob/master/$(MSBuildProjectName)</PackageProjectUrl>
+				<PackageProjectUrl>$(RepoUrl)/tree/latest/$(MSBuildProjectName)</PackageProjectUrl>
 				<PackageIcon>icon.png</PackageIcon>
 				<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
 				<PackageReleaseNotes>CHANGELOG.md</PackageReleaseNotes>

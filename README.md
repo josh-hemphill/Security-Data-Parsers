@@ -37,46 +37,7 @@ Either commands, from Package Manager Console or .NET Core CLI, will download an
 
 ## Usage
 
-### SubjectAlternativeName (SAN)
-
-```c#
-using SecurityDataParsers.SubjectAlternativeName;
-
-// Load the certificate you want get data from
-var cert = new X509Certificate2("path/to/certificate.pfx", "password");
-
-// Get the SAN extension
-var sanExtension = cert.Extensions["2.5.29.17"];
-// Parse the SAN extension
-var san = new SAN(sanExtension);
-
-// Or let the SAN class extract it itself
-var san = new SAN(cert);
-
-
-// Destructure the SAN extension to get its properties
-var (
-  fASCN,
-  principalName,
-  rfc822Name,
-  dnsName,
-  x400Address,
-  directoryName,
-  ediPartyName,
-  uniformResourceIdentifier,
-  iPAddress,
-  registeredID
-) = san.First;
-
-// Use the properties as needed
-Console.WriteLine($"FASCN: {fASCN.personIdentifier}");
-Console.WriteLine($"Principal Name: {principalName}");
-
-// If it contains multiples, the base class contains lists you can check.
-san.dnsNames.Select(v => Console.WrtitLine(v.Host))
-```
-
-### FederalAgencySmartCredentialNumber (FASCN)
+### Federal Agency Smart Credential Number (FASCN)
 
 ```C#
 
@@ -124,10 +85,61 @@ san.dnsNames.Select(v => Console.WrtitLine(v.Host))
 
 ```
 
+### Subject Alternative Name (SAN)
+
+```c#
+using SecurityDataParsers.SubjectAlternativeName;
+
+// Load the certificate you want get data from
+var cert = new X509Certificate2("path/to/certificate.pfx", "password");
+
+// Get the SAN extension
+var sanExtension = cert.Extensions["2.5.29.17"];
+// Parse the SAN extension
+var san = new SAN(sanExtension);
+
+// Or let the SAN class extract it itself
+var san = new SAN(cert);
+
+
+// Destructure the SAN extension to get its properties
+var (
+  fASCN,
+  principalName,
+  rfc822Name,
+  dnsName,
+  x400Address,
+  directoryName,
+  ediPartyName,
+  uniformResourceIdentifier,
+  iPAddress,
+  registeredID
+) = san.First;
+
+// Use the properties as needed
+Console.WriteLine($"FASCN: {fASCN.personIdentifier}");
+Console.WriteLine($"Principal Name: {principalName}");
+
+// If it contains multiples, the base class contains lists you can check.
+san.dnsNames.Select(v => Console.WrtitLine(v.Host))
+```
+
+## API
+
 ### See the packages' respective READMEs
 
-  - [FederalAgencySmartCredentialNumber](https://github.com/josh-hemphill/Security-Data-Parsers/tree/latest/CHANGELOG.md)
-  - [SubjectAlternativeName](https://github.com/josh-hemphill/Security-Data-Parsers/tree/latest/CHANGELOG.md)
+  - [FederalAgencySmartCredentialNumber](https://github.com/josh-hemphill/Security-Data-Parsers/tree/latest/FederalAgencySmartCredentialNumber/README.md)
+  - [SubjectAlternativeName](https://github.com/josh-hemphill/Security-Data-Parsers/tree/latest/SubjectAlternativeName/README.md)
+
+#### Or the generated API docs
+
+> ### FederalAgencySmartCredentialNumber (FASCN)
+>
+> See the API docs: [FederalAgencySmartCredentialNumber/docs/README.md](FederalAgencySmartCredentialNumber/docs/README.md)
+>
+> ### SubjectAlternativeName (SAN)
+>
+> See the API docs: [SubjectAlternativeName/docs/README.md](SubjectAlternativeName/docs/README.md)
 
 ## Changelog
 

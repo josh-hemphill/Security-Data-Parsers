@@ -1,12 +1,12 @@
 ﻿toc:
   - name: SubjectAlternativeName
-    link: SubjectAlternativeName
+    link: SubjectAlternativeNameAssembly
     subfolderitems:
     - name: SecurityDataParsers.SubjectAlternativeName
-      link: SecurityDataParsers.SubjectAlternativeNameNamespace
+      link: SecurityDataParsersSubjectAlternativeNameNamespace
       subfolderitems:
       - name: EdiPartyName
-        link: SecurityDataParsers.SubjectAlternativeName/EdiPartyName
+        link: SecurityDataParsers.SubjectAlternativeName/EdiPartyNameType
         subfolderitems:
         - name: GetInstance
           link: SecurityDataParsers.SubjectAlternativeName/EdiPartyName/GetInstance
@@ -19,7 +19,7 @@
         - name: NameAssigner
           link: SecurityDataParsers.SubjectAlternativeName/EdiPartyName/NameAssigner
       - name: SAN
-        link: SecurityDataParsers.SubjectAlternativeName/SAN
+        link: SecurityDataParsers.SubjectAlternativeName/SANType
         subfolderitems:
         - name: ParseKnownFields
           link: SecurityDataParsers.SubjectAlternativeName/SAN/ParseKnownFields
@@ -46,7 +46,7 @@
         - name: registeredIDs
           link: SecurityDataParsers.SubjectAlternativeName/SAN/registeredIDs
       - name: SAN.OtherNames
-        link: SecurityDataParsers.SubjectAlternativeName/SAN.OtherNames
+        link: SecurityDataParsers.SubjectAlternativeName/SANOtherNamesType
         subfolderitems:
         - name: OtherNames
           link: SecurityDataParsers.SubjectAlternativeName/SAN.OtherNames/OtherNames
@@ -57,7 +57,7 @@
         - name: unknown
           link: SecurityDataParsers.SubjectAlternativeName/SAN.OtherNames/unknown
       - name: SAN.Firsts
-        link: SecurityDataParsers.SubjectAlternativeName/SAN.Firsts
+        link: SecurityDataParsers.SubjectAlternativeName/SANFirstsType
         subfolderitems:
         - name: FASCN
           link: SecurityDataParsers.SubjectAlternativeName/SAN.Firsts/FASCN
@@ -80,10 +80,10 @@
         - name: RegisteredID
           link: SecurityDataParsers.SubjectAlternativeName/SAN.Firsts/RegisteredID
     - name: SecurityDataParsers.SubjectAlternativeName.X400Address
-      link: SecurityDataParsers.SubjectAlternativeName.X400AddressNamespace
+      link: SecurityDataParsersSubjectAlternativeNameX400AddressNamespace
       subfolderitems:
       - name: DomainDefinedAttribute
-        link: SecurityDataParsers.SubjectAlternativeName.X400Address/DomainDefinedAttribute
+        link: SecurityDataParsers.SubjectAlternativeName.X400Address/DomainDefinedAttributeType
         subfolderitems:
         - name: GetInstance
           link: SecurityDataParsers.SubjectAlternativeName.X400Address/DomainDefinedAttribute/GetInstance
@@ -100,7 +100,7 @@
         - name: Item
           link: SecurityDataParsers.SubjectAlternativeName.X400Address/DomainDefinedAttribute/Item
       - name: DomainDefinedAttributes
-        link: SecurityDataParsers.SubjectAlternativeName.X400Address/DomainDefinedAttributes
+        link: SecurityDataParsers.SubjectAlternativeName.X400Address/DomainDefinedAttributesType
         subfolderitems:
         - name: GetInstance
           link: SecurityDataParsers.SubjectAlternativeName.X400Address/DomainDefinedAttributes/GetInstance
@@ -113,7 +113,7 @@
         - name: Item
           link: SecurityDataParsers.SubjectAlternativeName.X400Address/DomainDefinedAttributes/Item
       - name: ExtensionAttribute
-        link: SecurityDataParsers.SubjectAlternativeName.X400Address/ExtensionAttribute
+        link: SecurityDataParsers.SubjectAlternativeName.X400Address/ExtensionAttributeType
         subfolderitems:
         - name: GetInstance
           link: SecurityDataParsers.SubjectAlternativeName.X400Address/ExtensionAttribute/GetInstance
@@ -130,7 +130,7 @@
         - name: Item
           link: SecurityDataParsers.SubjectAlternativeName.X400Address/ExtensionAttribute/Item
       - name: ExtensionAttributes
-        link: SecurityDataParsers.SubjectAlternativeName.X400Address/ExtensionAttributes
+        link: SecurityDataParsers.SubjectAlternativeName.X400Address/ExtensionAttributesType
         subfolderitems:
         - name: GetInstance
           link: SecurityDataParsers.SubjectAlternativeName.X400Address/ExtensionAttributes/GetInstance
@@ -143,7 +143,7 @@
         - name: Item
           link: SecurityDataParsers.SubjectAlternativeName.X400Address/ExtensionAttributes/Item
       - name: ORAddress
-        link: SecurityDataParsers.SubjectAlternativeName.X400Address/ORAddress
+        link: SecurityDataParsers.SubjectAlternativeName.X400Address/ORAddressType
         subfolderitems:
         - name: GetInstance
           link: SecurityDataParsers.SubjectAlternativeName.X400Address/ORAddress/GetInstance
@@ -158,7 +158,7 @@
         - name: extensionAttributes
           link: SecurityDataParsers.SubjectAlternativeName.X400Address/ORAddress/extensionAttributes
       - name: StandardAttributes
-        link: SecurityDataParsers.SubjectAlternativeName.X400Address/StandardAttributes
+        link: SecurityDataParsers.SubjectAlternativeName.X400Address/StandardAttributesType
         subfolderitems:
         - name: GetInstance
           link: SecurityDataParsers.SubjectAlternativeName.X400Address/StandardAttributes/GetInstance
@@ -185,10 +185,10 @@
         - name: organizationalUnitNames
           link: SecurityDataParsers.SubjectAlternativeName.X400Address/StandardAttributes/organizationalUnitNames
     - name: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard
-      link: SecurityDataParsers.SubjectAlternativeName.X400Address.StandardNamespace
+      link: SecurityDataParsersSubjectAlternativeNameX400AddressStandardNamespace
       subfolderitems:
       - name: AdministrationDomainName
-        link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/AdministrationDomainName
+        link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/AdministrationDomainNameType
         subfolderitems:
         - name: GetInstance
           link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/AdministrationDomainName/GetInstance
@@ -211,7 +211,7 @@
         - name: ContentTypePrintableString
           link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/AdministrationDomainName/ContentTypePrintableString
       - name: CountryName
-        link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/CountryName
+        link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/CountryNameType
         subfolderitems:
         - name: GetInstance
           link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/CountryName/GetInstance
@@ -232,7 +232,7 @@
         - name: PrintableLength
           link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/CountryName/PrintableLength
       - name: NetworkAddress
-        link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/NetworkAddress
+        link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/NetworkAddressType
         subfolderitems:
         - name: GetInstance
           link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/NetworkAddress/GetInstance
@@ -251,7 +251,7 @@
         - name: ExtendedMaxLength
           link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/NetworkAddress/ExtendedMaxLength
       - name: OrganizationalUnitNames
-        link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/OrganizationalUnitNames
+        link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/OrganizationalUnitNamesType
         subfolderitems:
         - name: GetInstance
           link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/OrganizationalUnitNames/GetInstance
@@ -264,7 +264,7 @@
         - name: Item
           link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/OrganizationalUnitNames/Item
       - name: OrganizationName
-        link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/OrganizationName
+        link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/OrganizationNameType
         subfolderitems:
         - name: GetInstance
           link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/OrganizationName/GetInstance
@@ -283,7 +283,7 @@
         - name: TeletexOrgMaxLength
           link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/OrganizationName/TeletexOrgMaxLength
       - name: PersonalName
-        link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/PersonalName
+        link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/PersonalNameType
         subfolderitems:
         - name: GetInstance
           link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/PersonalName/GetInstance
@@ -306,7 +306,7 @@
         - name: Count
           link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/PersonalName/Count
       - name: PrivateDomainName
-        link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/PrivateDomainName
+        link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/PrivateDomainNameType
         subfolderitems:
         - name: GetInstance
           link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/PrivateDomainName/GetInstance

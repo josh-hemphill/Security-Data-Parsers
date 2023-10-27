@@ -13,11 +13,11 @@ public void Deconstruct(out AgencyCode agencyCode, out SystemCode systemCode)
 
 ## See Also
 
-* class [AgencyCode](../Segments.AgencyCode.md)
-* class [SystemCode](../Segments.SystemCode.md)
-* class [FASCN](../FASCN.md)
-* namespace [SecurityDataParsers.FederalAgencySmartCredentialNumber](../FASCN.md.md)
-* assembly [FederalAgencySmartCredentialNumber](../../FederalAgencySmartCredentialNumber.md)
+* class [AgencyCode](../SegmentsAgencyCodeType)
+* class [SystemCode](../SegmentsSystemCodeType)
+* class [FASCN](../FASCNType)
+* namespace [SecurityDataParsers.FederalAgencySmartCredentialNumber](../FASCNType)
+* assembly [FederalAgencySmartCredentialNumber](../../FederalAgencySmartCredentialNumberAssembly)
 
 ---
 
@@ -38,12 +38,12 @@ public void Deconstruct(out AgencyCode agencyCode, out SystemCode systemCode,
 
 ## See Also
 
-* class [AgencyCode](../Segments.AgencyCode.md)
-* class [SystemCode](../Segments.SystemCode.md)
-* class [CredentialNumber](../Segments.CredentialNumber.md)
-* class [FASCN](../FASCN.md)
-* namespace [SecurityDataParsers.FederalAgencySmartCredentialNumber](../FASCN.md.md)
-* assembly [FederalAgencySmartCredentialNumber](../../FederalAgencySmartCredentialNumber.md)
+* class [AgencyCode](../SegmentsAgencyCodeType)
+* class [SystemCode](../SegmentsSystemCodeType)
+* class [CredentialNumber](../SegmentsCredentialNumberType)
+* class [FASCN](../FASCNType)
+* namespace [SecurityDataParsers.FederalAgencySmartCredentialNumber](../FASCNType)
+* assembly [FederalAgencySmartCredentialNumber](../../FederalAgencySmartCredentialNumberAssembly)
 
 ---
 
@@ -65,13 +65,13 @@ public void Deconstruct(out AgencyCode agencyCode, out SystemCode systemCode,
 
 ## See Also
 
-* class [AgencyCode](../Segments.AgencyCode.md)
-* class [SystemCode](../Segments.SystemCode.md)
-* class [CredentialNumber](../Segments.CredentialNumber.md)
-* class [CredentialSeries](../Segments.CredentialSeries.md)
-* class [FASCN](../FASCN.md)
-* namespace [SecurityDataParsers.FederalAgencySmartCredentialNumber](../FASCN.md.md)
-* assembly [FederalAgencySmartCredentialNumber](../../FederalAgencySmartCredentialNumber.md)
+* class [AgencyCode](../SegmentsAgencyCodeType)
+* class [SystemCode](../SegmentsSystemCodeType)
+* class [CredentialNumber](../SegmentsCredentialNumberType)
+* class [CredentialSeries](../SegmentsCredentialSeriesType)
+* class [FASCN](../FASCNType)
+* namespace [SecurityDataParsers.FederalAgencySmartCredentialNumber](../FASCNType)
+* assembly [FederalAgencySmartCredentialNumber](../../FederalAgencySmartCredentialNumberAssembly)
 
 ---
 
@@ -95,14 +95,14 @@ public void Deconstruct(out AgencyCode agencyCode, out SystemCode systemCode,
 
 ## See Also
 
-* class [AgencyCode](../Segments.AgencyCode.md)
-* class [SystemCode](../Segments.SystemCode.md)
-* class [CredentialNumber](../Segments.CredentialNumber.md)
-* class [CredentialSeries](../Segments.CredentialSeries.md)
-* class [IndividualCredentialIssue](../Segments.IndividualCredentialIssue.md)
-* class [FASCN](../FASCN.md)
-* namespace [SecurityDataParsers.FederalAgencySmartCredentialNumber](../FASCN.md.md)
-* assembly [FederalAgencySmartCredentialNumber](../../FederalAgencySmartCredentialNumber.md)
+* class [AgencyCode](../SegmentsAgencyCodeType)
+* class [SystemCode](../SegmentsSystemCodeType)
+* class [CredentialNumber](../SegmentsCredentialNumberType)
+* class [CredentialSeries](../SegmentsCredentialSeriesType)
+* class [IndividualCredentialIssue](../SegmentsIndividualCredentialIssueType)
+* class [FASCN](../FASCNType)
+* namespace [SecurityDataParsers.FederalAgencySmartCredentialNumber](../FASCNType)
+* assembly [FederalAgencySmartCredentialNumber](../../FederalAgencySmartCredentialNumberAssembly)
 
 ---
 
@@ -127,15 +127,15 @@ public void Deconstruct(out AgencyCode agencyCode, out SystemCode systemCode,
 
 ## See Also
 
-* class [AgencyCode](../Segments.AgencyCode.md)
-* class [SystemCode](../Segments.SystemCode.md)
-* class [CredentialNumber](../Segments.CredentialNumber.md)
-* class [CredentialSeries](../Segments.CredentialSeries.md)
-* class [IndividualCredentialIssue](../Segments.IndividualCredentialIssue.md)
-* class [PersonIdentifier](../Segments.PersonIdentifier.md)
-* class [FASCN](../FASCN.md)
-* namespace [SecurityDataParsers.FederalAgencySmartCredentialNumber](../FASCN.md.md)
-* assembly [FederalAgencySmartCredentialNumber](../../FederalAgencySmartCredentialNumber.md)
+* class [AgencyCode](../SegmentsAgencyCodeType)
+* class [SystemCode](../SegmentsSystemCodeType)
+* class [CredentialNumber](../SegmentsCredentialNumberType)
+* class [CredentialSeries](../SegmentsCredentialSeriesType)
+* class [IndividualCredentialIssue](../SegmentsIndividualCredentialIssueType)
+* class [PersonIdentifier](../SegmentsPersonIdentifierType)
+* class [FASCN](../FASCNType)
+* namespace [SecurityDataParsers.FederalAgencySmartCredentialNumber](../FASCNType)
+* assembly [FederalAgencySmartCredentialNumber](../../FederalAgencySmartCredentialNumberAssembly)
 
 ---
 
@@ -162,16 +162,16 @@ public void Deconstruct(out AgencyCode agencyCode, out SystemCode systemCode,
 
 ## See Also
 
-* class [AgencyCode](../Segments.AgencyCode.md)
-* class [SystemCode](../Segments.SystemCode.md)
-* class [CredentialNumber](../Segments.CredentialNumber.md)
-* class [CredentialSeries](../Segments.CredentialSeries.md)
-* class [IndividualCredentialIssue](../Segments.IndividualCredentialIssue.md)
-* class [PersonIdentifier](../Segments.PersonIdentifier.md)
-* class [OrganizationalCategory](../Segments.OrganizationalCategory.md)
-* class [FASCN](../FASCN.md)
-* namespace [SecurityDataParsers.FederalAgencySmartCredentialNumber](../FASCN.md.md)
-* assembly [FederalAgencySmartCredentialNumber](../../FederalAgencySmartCredentialNumber.md)
+* class [AgencyCode](../SegmentsAgencyCodeType)
+* class [SystemCode](../SegmentsSystemCodeType)
+* class [CredentialNumber](../SegmentsCredentialNumberType)
+* class [CredentialSeries](../SegmentsCredentialSeriesType)
+* class [IndividualCredentialIssue](../SegmentsIndividualCredentialIssueType)
+* class [PersonIdentifier](../SegmentsPersonIdentifierType)
+* class [OrganizationalCategory](../SegmentsOrganizationalCategoryType)
+* class [FASCN](../FASCNType)
+* namespace [SecurityDataParsers.FederalAgencySmartCredentialNumber](../FASCNType)
+* assembly [FederalAgencySmartCredentialNumber](../../FederalAgencySmartCredentialNumberAssembly)
 
 ---
 
@@ -200,17 +200,17 @@ public void Deconstruct(out AgencyCode agencyCode, out SystemCode systemCode,
 
 ## See Also
 
-* class [AgencyCode](../Segments.AgencyCode.md)
-* class [SystemCode](../Segments.SystemCode.md)
-* class [CredentialNumber](../Segments.CredentialNumber.md)
-* class [CredentialSeries](../Segments.CredentialSeries.md)
-* class [IndividualCredentialIssue](../Segments.IndividualCredentialIssue.md)
-* class [PersonIdentifier](../Segments.PersonIdentifier.md)
-* class [OrganizationalCategory](../Segments.OrganizationalCategory.md)
-* class [OrganizationIdentifier](../Segments.OrganizationIdentifier.md)
-* class [FASCN](../FASCN.md)
-* namespace [SecurityDataParsers.FederalAgencySmartCredentialNumber](../FASCN.md.md)
-* assembly [FederalAgencySmartCredentialNumber](../../FederalAgencySmartCredentialNumber.md)
+* class [AgencyCode](../SegmentsAgencyCodeType)
+* class [SystemCode](../SegmentsSystemCodeType)
+* class [CredentialNumber](../SegmentsCredentialNumberType)
+* class [CredentialSeries](../SegmentsCredentialSeriesType)
+* class [IndividualCredentialIssue](../SegmentsIndividualCredentialIssueType)
+* class [PersonIdentifier](../SegmentsPersonIdentifierType)
+* class [OrganizationalCategory](../SegmentsOrganizationalCategoryType)
+* class [OrganizationIdentifier](../SegmentsOrganizationIdentifierType)
+* class [FASCN](../FASCNType)
+* namespace [SecurityDataParsers.FederalAgencySmartCredentialNumber](../FASCNType)
+* assembly [FederalAgencySmartCredentialNumber](../../FederalAgencySmartCredentialNumberAssembly)
 
 ---
 
@@ -241,17 +241,17 @@ public void Deconstruct(out AgencyCode agencyCode, out SystemCode systemCode,
 
 ## See Also
 
-* class [AgencyCode](../Segments.AgencyCode.md)
-* class [SystemCode](../Segments.SystemCode.md)
-* class [CredentialNumber](../Segments.CredentialNumber.md)
-* class [CredentialSeries](../Segments.CredentialSeries.md)
-* class [IndividualCredentialIssue](../Segments.IndividualCredentialIssue.md)
-* class [PersonIdentifier](../Segments.PersonIdentifier.md)
-* class [OrganizationalCategory](../Segments.OrganizationalCategory.md)
-* class [OrganizationIdentifier](../Segments.OrganizationIdentifier.md)
-* class [PersonOrOrganizationAssociationCategory](../Segments.PersonOrOrganizationAssociationCategory.md)
-* class [FASCN](../FASCN.md)
-* namespace [SecurityDataParsers.FederalAgencySmartCredentialNumber](../FASCN.md.md)
-* assembly [FederalAgencySmartCredentialNumber](../../FederalAgencySmartCredentialNumber.md)
+* class [AgencyCode](../SegmentsAgencyCodeType)
+* class [SystemCode](../SegmentsSystemCodeType)
+* class [CredentialNumber](../SegmentsCredentialNumberType)
+* class [CredentialSeries](../SegmentsCredentialSeriesType)
+* class [IndividualCredentialIssue](../SegmentsIndividualCredentialIssueType)
+* class [PersonIdentifier](../SegmentsPersonIdentifierType)
+* class [OrganizationalCategory](../SegmentsOrganizationalCategoryType)
+* class [OrganizationIdentifier](../SegmentsOrganizationIdentifierType)
+* class [PersonOrOrganizationAssociationCategory](../SegmentsPersonOrOrganizationAssociationCategoryType)
+* class [FASCN](../FASCNType)
+* namespace [SecurityDataParsers.FederalAgencySmartCredentialNumber](../FASCNType)
+* assembly [FederalAgencySmartCredentialNumber](../../FederalAgencySmartCredentialNumberAssembly)
 
 <!-- DO NOT EDIT: generated by xmldocmd for FederalAgencySmartCredentialNumber.dll -->

@@ -1,12 +1,12 @@
 ﻿toc:
   - name: FederalAgencySmartCredentialNumber
-    link: FederalAgencySmartCredentialNumber
+    link: FederalAgencySmartCredentialNumberAssembly
     subfolderitems:
     - name: SecurityDataParsers.FederalAgencySmartCredentialNumber
-      link: SecurityDataParsers.FederalAgencySmartCredentialNumberNamespace
+      link: SecurityDataParsersFederalAgencySmartCredentialNumberNamespace
       subfolderitems:
       - name: FASCN
-        link: SecurityDataParsers.FederalAgencySmartCredentialNumber/FASCN
+        link: SecurityDataParsers.FederalAgencySmartCredentialNumber/FASCNType
         subfolderitems:
         - name: FromCertificate
           link: SecurityDataParsers.FederalAgencySmartCredentialNumber/FASCN/FromCertificate
@@ -47,7 +47,7 @@
         - name: BITS_LENGTH
           link: SecurityDataParsers.FederalAgencySmartCredentialNumber/FASCN/BITS_LENGTH
       - name: Segments
-        link: SecurityDataParsers.FederalAgencySmartCredentialNumber/Segments
+        link: SecurityDataParsers.FederalAgencySmartCredentialNumber/SegmentsType
         subfolderitems:
         - name: FlagLength
           link: SecurityDataParsers.FederalAgencySmartCredentialNumber/Segments/FlagLength
@@ -58,17 +58,17 @@
         - name: EndSentinel
           link: SecurityDataParsers.FederalAgencySmartCredentialNumber/Segments/EndSentinel
       - name: FASCN.FASCNSegmentBitsMismatch
-        link: SecurityDataParsers.FederalAgencySmartCredentialNumber/FASCN.FASCNSegmentBitsMismatch
+        link: SecurityDataParsers.FederalAgencySmartCredentialNumber/FASCNFASCNSegmentBitsMismatchType
         subfolderitems:
         - name: FASCNSegmentBitsMismatch
           link: SecurityDataParsers.FederalAgencySmartCredentialNumber/FASCN.FASCNSegmentBitsMismatch/FASCNSegmentBitsMismatch
       - name: Segments.ISegment
-        link: SecurityDataParsers.FederalAgencySmartCredentialNumber/Segments.ISegment
+        link: SecurityDataParsers.FederalAgencySmartCredentialNumber/SegmentsISegmentType
         subfolderitems:
         - name: Length
           link: SecurityDataParsers.FederalAgencySmartCredentialNumber/Segments.ISegment/Length
       - name: Segments.FlagSegment
-        link: SecurityDataParsers.FederalAgencySmartCredentialNumber/Segments.FlagSegment
+        link: SecurityDataParsers.FederalAgencySmartCredentialNumber/SegmentsFlagSegmentType
         subfolderitems:
         - name: FlagSegment
           link: SecurityDataParsers.FederalAgencySmartCredentialNumber/Segments.FlagSegment/FlagSegment
@@ -77,7 +77,7 @@
         - name: MustEqual
           link: SecurityDataParsers.FederalAgencySmartCredentialNumber/Segments.FlagSegment/MustEqual
       - name: Segments.IValueSegment
-        link: SecurityDataParsers.FederalAgencySmartCredentialNumber/Segments.IValueSegment
+        link: SecurityDataParsers.FederalAgencySmartCredentialNumber/SegmentsIValueSegmentType
         subfolderitems:
         - name: Digits
           link: SecurityDataParsers.FederalAgencySmartCredentialNumber/Segments.IValueSegment/Digits
@@ -86,17 +86,17 @@
         - name: Abbreviation
           link: SecurityDataParsers.FederalAgencySmartCredentialNumber/Segments.IValueSegment/Abbreviation
       - name: Segments.IEnumSegment
-        link: SecurityDataParsers.FederalAgencySmartCredentialNumber/Segments.IEnumSegment
+        link: SecurityDataParsers.FederalAgencySmartCredentialNumber/SegmentsIEnumSegmentType
         subfolderitems:
         - name: GetFriendlyName
           link: SecurityDataParsers.FederalAgencySmartCredentialNumber/Segments.IEnumSegment/GetFriendlyName
       - name: Segments.ITupleSegment<T>
-        link: SecurityDataParsers.FederalAgencySmartCredentialNumber/Segments.ITupleSegment-1
+        link: SecurityDataParsers.FederalAgencySmartCredentialNumber/SegmentsITupleSegment-1Type
         subfolderitems:
         - name: AsTuple
           link: SecurityDataParsers.FederalAgencySmartCredentialNumber/Segments.ITupleSegment-1/AsTuple
       - name: Segments.AgencyCode
-        link: SecurityDataParsers.FederalAgencySmartCredentialNumber/Segments.AgencyCode
+        link: SecurityDataParsers.FederalAgencySmartCredentialNumber/SegmentsAgencyCodeType
         subfolderitems:
         - name: GetFriendlyName
           link: SecurityDataParsers.FederalAgencySmartCredentialNumber/Segments.AgencyCode/GetFriendlyName
@@ -113,7 +113,7 @@
         - name: NameMap
           link: SecurityDataParsers.FederalAgencySmartCredentialNumber/Segments.AgencyCode/NameMap
       - name: Segments.SystemCode
-        link: SecurityDataParsers.FederalAgencySmartCredentialNumber/Segments.SystemCode
+        link: SecurityDataParsers.FederalAgencySmartCredentialNumber/SegmentsSystemCodeType
         subfolderitems:
         - name: AsTuple
           link: SecurityDataParsers.FederalAgencySmartCredentialNumber/Segments.SystemCode/AsTuple
@@ -128,7 +128,7 @@
         - name: Abbreviation
           link: SecurityDataParsers.FederalAgencySmartCredentialNumber/Segments.SystemCode/Abbreviation
       - name: Segments.CredentialNumber
-        link: SecurityDataParsers.FederalAgencySmartCredentialNumber/Segments.CredentialNumber
+        link: SecurityDataParsers.FederalAgencySmartCredentialNumber/SegmentsCredentialNumberType
         subfolderitems:
         - name: AsTuple
           link: SecurityDataParsers.FederalAgencySmartCredentialNumber/Segments.CredentialNumber/AsTuple
@@ -143,7 +143,7 @@
         - name: Abbreviation
           link: SecurityDataParsers.FederalAgencySmartCredentialNumber/Segments.CredentialNumber/Abbreviation
       - name: Segments.CredentialSeries
-        link: SecurityDataParsers.FederalAgencySmartCredentialNumber/Segments.CredentialSeries
+        link: SecurityDataParsers.FederalAgencySmartCredentialNumber/SegmentsCredentialSeriesType
         subfolderitems:
         - name: AsTuple
           link: SecurityDataParsers.FederalAgencySmartCredentialNumber/Segments.CredentialSeries/AsTuple
@@ -158,7 +158,7 @@
         - name: Abbreviation
           link: SecurityDataParsers.FederalAgencySmartCredentialNumber/Segments.CredentialSeries/Abbreviation
       - name: Segments.IndividualCredentialIssue
-        link: SecurityDataParsers.FederalAgencySmartCredentialNumber/Segments.IndividualCredentialIssue
+        link: SecurityDataParsers.FederalAgencySmartCredentialNumber/SegmentsIndividualCredentialIssueType
         subfolderitems:
         - name: AsTuple
           link: SecurityDataParsers.FederalAgencySmartCredentialNumber/Segments.IndividualCredentialIssue/AsTuple
@@ -173,7 +173,7 @@
         - name: Abbreviation
           link: SecurityDataParsers.FederalAgencySmartCredentialNumber/Segments.IndividualCredentialIssue/Abbreviation
       - name: Segments.PersonIdentifier
-        link: SecurityDataParsers.FederalAgencySmartCredentialNumber/Segments.PersonIdentifier
+        link: SecurityDataParsers.FederalAgencySmartCredentialNumber/SegmentsPersonIdentifierType
         subfolderitems:
         - name: AsTuple
           link: SecurityDataParsers.FederalAgencySmartCredentialNumber/Segments.PersonIdentifier/AsTuple
@@ -188,7 +188,7 @@
         - name: Abbreviation
           link: SecurityDataParsers.FederalAgencySmartCredentialNumber/Segments.PersonIdentifier/Abbreviation
       - name: Segments.OrganizationalCategory
-        link: SecurityDataParsers.FederalAgencySmartCredentialNumber/Segments.OrganizationalCategory
+        link: SecurityDataParsers.FederalAgencySmartCredentialNumber/SegmentsOrganizationalCategoryType
         subfolderitems:
         - name: GetFriendlyName
           link: SecurityDataParsers.FederalAgencySmartCredentialNumber/Segments.OrganizationalCategory/GetFriendlyName
@@ -205,7 +205,7 @@
         - name: NameMap
           link: SecurityDataParsers.FederalAgencySmartCredentialNumber/Segments.OrganizationalCategory/NameMap
       - name: Segments.OrganizationIdentifier
-        link: SecurityDataParsers.FederalAgencySmartCredentialNumber/Segments.OrganizationIdentifier
+        link: SecurityDataParsers.FederalAgencySmartCredentialNumber/SegmentsOrganizationIdentifierType
         subfolderitems:
         - name: AsTuple
           link: SecurityDataParsers.FederalAgencySmartCredentialNumber/Segments.OrganizationIdentifier/AsTuple
@@ -220,7 +220,7 @@
         - name: Abbreviation
           link: SecurityDataParsers.FederalAgencySmartCredentialNumber/Segments.OrganizationIdentifier/Abbreviation
       - name: Segments.PersonOrOrganizationAssociationCategory
-        link: SecurityDataParsers.FederalAgencySmartCredentialNumber/Segments.PersonOrOrganizationAssociationCategory
+        link: SecurityDataParsers.FederalAgencySmartCredentialNumber/SegmentsPersonOrOrganizationAssociationCategoryType
         subfolderitems:
         - name: GetFriendlyName
           link: SecurityDataParsers.FederalAgencySmartCredentialNumber/Segments.PersonOrOrganizationAssociationCategory/GetFriendlyName

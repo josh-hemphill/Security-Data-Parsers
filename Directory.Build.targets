@@ -11,6 +11,6 @@
 	<Target Name="BuildDocs" AfterTargets="AfterBuild"
 		Condition="!($(MSBuildProjectName.EndsWith('.Test')) OR $(MSBuildProjectName)=='DocsGenerator')">
 		<Exec
-			Command="$([System.IO.Path]::Combine($(DocsGenProj),$(DocsGenName))).exe $(DocsGenArgs.Replace('%0A',' ').Replace('	',''))" />
+			Command="dotnet $([System.IO.Path]::Combine($(DocsGenProj),$(DocsGenName))).dll -- $(DocsGenArgs.Replace('%0A',' ').Replace('	',''))" />
 	</Target>
 </Project>
