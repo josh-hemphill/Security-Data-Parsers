@@ -1,6 +1,6 @@
 # SubjectAlternativeName
 
-[![NuGet](https://img.shields.io/nuget/dt/SecurityDataParsers.SubjectAlternativeName.svg)](https://www.nuget.org/packages/SecurityDataParsers.SubjectAlternativeName) [![NuGet](https://img.shields.io/nuget/vpre/SecurityDataParsers.SubjectAlternativeName.svg)](https://www.nuget.org/packages/SecurityDataParsers.SubjectAlternativeName) [![Release](https://github.com/josh-hemphill/SecurityDataParsers/actions/workflows/release.yml/badge.svg)](https://github.com/josh-hemphill/SecurityDataParsers/actions/workflows/release.yml)
+[![NuGet](https://img.shields.io/nuget/dt/SecurityDataParsers.SubjectAlternativeName.svg)](https://www.nuget.org/packages/SecurityDataParsers.SubjectAlternativeName) [![NuGet](https://img.shields.io/nuget/vpre/SecurityDataParsers.SubjectAlternativeName.svg)](https://www.nuget.org/packages/SecurityDataParsers.SubjectAlternativeName) [![Release](https://github.com/josh-hemphill/Security-Data-Parsers/actions/workflows/release.yml/badge.svg)](https://github.com/josh-hemphill/Security-Data-Parsers/actions/workflows/release.yml)
 
 A class for digging into all the possible extension data that can be on a certificate.
 
@@ -30,26 +30,63 @@ Or via the .NET Core command line interface:
 
 Either commands, from Package Manager Console or .NET Core CLI, will download and install the package.
 
-## Usage/API
+## Usage
 
->
-> ### Under construction 😜
->
+```c#
+using SecurityDataParsers.SubjectAlternativeName;
+
+// Load the certificate you want get data from
+var cert = new X509Certificate2("path/to/certificate.pfx", "password");
+
+// Get the SAN extension
+var sanExtension = cert.Extensions["2.5.29.17"];
+// Parse the SAN extension
+var san = new SAN(sanExtension);
+
+// Or let the SAN class extract it itself
+var san = new SAN(cert);
+
+
+// Destructure the SAN extension to get its properties
+var (
+  fASCN,
+  principalName,
+  rfc822Name,
+  dnsName,
+  x400Address,
+  directoryName,
+  ediPartyName,
+  uniformResourceIdentifier,
+  iPAddress,
+  registeredID
+) = san.First;
+
+// Use the properties as needed
+Console.WriteLine($"FASCN: {fASCN.personIdentifier}");
+Console.WriteLine($"Principal Name: {principalName}");
+
+// If it contains multiples, the base class contains lists you can check.
+san.dnsNames.Select(v => Console.WrtitLine(v.Host))
+```
+
+## API
+
+> See the API docs: [docs/README.md](docs/README.md)
 
 ## Changelog
 
-Take a look at the [CHANGELOG.md](https://github.com/josh-hemphill/SecurityDataParsers/tree/latest/CHANGELOG.md).
+Take a look at the [CHANGELOG.md](https://github.com/josh-hemphill/Security-Data-Parsers/tree/latest/CHANGELOG.md).
 
 ## Contribution
 
-You're free to contribute to this project by submitting [issues](https://github.com/josh-hemphill/SecurityDataParsers/issues) and/or [pull requests](https://github.com/josh-hemphill/SecurityDataParsers/pulls).
+You're free to contribute to this project by submitting [issues](https://github.com/josh-hemphill/Security-Data-Parsers/issues) and/or [pull requests](https://github.com/josh-hemphill/Security-Data-Parsers/pulls).
 
 Please keep in mind that every change and feature should be covered by
 tests.
 
 ## License
 
-This project is licensed under [MIT](https://github.com/josh-hemphill/SecurityDataParsers/blob/latest/LICENSE).
+This project is licensed under [MIT](https://github.com/josh-hemphill/Security-Data-Parsers/blob/latest/LICENSE).
 
 ## Contributors
 

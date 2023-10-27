@@ -1,22 +1,42 @@
 ﻿using Org.BouncyCastle.Asn1;
-
-namespace SubjectAlternativeName.X400Address.Standard;
-
-/*
-AdministrationDomainName ::= [APPLICATION 2] CHOICE {
-	numeric		NumericString		(SIZE (0..ub-domain-name-length)),
-	printable	PrintableString	(SIZE (0..ub-domain-name-length))
-}
-ub-domain-name-length INTEGER ::= 16
-*/
+namespace SecurityDataParsers.SubjectAlternativeName.X400Address.Standard;
+/// <summary>
+/// Represents an Administration Domain Name (ADMD) as defined in RFC 822.
+/// </summary>
+/// <remarks>
+/// <pre>
+/// AdministrationDomainName ::= [APPLICATION 2] CHOICE {
+/// 	numeric		NumericString		(SIZE (0..ub-domain-name-length)),
+/// 	printable	PrintableString	(SIZE (0..ub-domain-name-length))
+/// }
+/// ub-domain-name-length INTEGER ::= 16
+/// </pre>
+/// </remarks>
 public class AdministrationDomainName
 			: Asn1Encodable, IAsn1Choice {
-	public const int ContentTypeNumericString = 0;
-	public const int ContentTypePrintableString = 1;
+	/// <summary>
+	/// The maximum length of an Administration Domain Name.
+	/// </summary>
 	public const int AdministrationDomainNameMaxLength = 16;
-	internal readonly int contentType;
-	internal readonly IAsn1String contents;
 
+	/// <summary>
+	/// The content type for a numeric string.
+	/// </summary>
+	public const int ContentTypeNumericString = 0;
+
+	/// <summary>
+	/// The content type for a printable string.
+	/// </summary>
+	public const int ContentTypePrintableString = 1;
+
+	private readonly int contentType;
+	private readonly IAsn1String contents;
+
+	/// <summary>
+	/// Initializes a new instance of the <see cref="AdministrationDomainName"/> class with the specified content type and text.
+	/// </summary>
+	/// <param name="type">The content type of the ADMD.</param>
+	/// <param name="text">The text to encapsulate. Strings longer than <see cref="AdministrationDomainNameMaxLength"/> are truncated.</param>
 	public AdministrationDomainName(
 			int type,
 			string text ) {
@@ -34,12 +54,11 @@ public class AdministrationDomainName
 			_ => throw new ArgumentException( "unknown object in factory: AdministrationDomainName( int type, string text )" ),
 		};
 	}
-	/**
-	 * Creates a new <code>AdministrationDomainName</code> instance.
-	 *
-	 * @param text the text to encapsulate. Strings longer than 200
-	 * characters are truncated.
-	 */
+
+	/// <summary>
+	/// Initializes a new instance of the <see cref="AdministrationDomainName"/> class with the specified text.
+	/// </summary>
+	/// <param name="text">The text to encapsulate. Strings longer than <see cref="AdministrationDomainNameMaxLength"/> are truncated.</param>
 	public AdministrationDomainName(
 		string text ) {
 		// by default use PrintableString
@@ -51,18 +70,24 @@ public class AdministrationDomainName
 		contents = new DerPrintableString( text );
 	}
 
-	/**
-	 * Creates a new <code>AdministrationDomainName</code> instance.
-	 * <p>Useful when reading back a <code>AdministrationDomainName</code> class
-	 * from it's Asn1Encodable form.</p>
-	 *
-	 * @param contents an <code>Asn1Encodable</code> instance.
-	 */
+	/// <summary>
+	/// Initializes a new instance of the <see cref="AdministrationDomainName"/> class from its Asn1Encodable form.
+	/// </summary>
+	/// <remarks>
+	/// <p>Useful when reading back a <code>AdministrationDomainName</code> class
+	/// from it's Asn1Encodable form.</p>
+	/// </remarks>
+	/// <param name="contents">An <see cref="IAsn1String"/> instance.</param>
 	public AdministrationDomainName(
 		IAsn1String contents ) {
 		this.contents = contents;
 	}
 
+	/// <summary>
+	/// Gets an instance of <see cref="AdministrationDomainName"/> from the specified object.
+	/// </summary>
+	/// <param name="obj">The object to get an instance of <see cref="AdministrationDomainName"/> from.</param>
+	/// <returns>An instance of <see cref="AdministrationDomainName"/>.</returns>
 	public static AdministrationDomainName GetInstance( object obj ) {
 		return obj is IAsn1String asn1String
 			? new AdministrationDomainName( asn1String )
@@ -71,9 +96,16 @@ public class AdministrationDomainName
 				throw new ArgumentException( "unknown object in factory: AdministrationDomainName.GetInstance( object obj )" );
 	}
 
+	/// <summary>
+	/// Gets an instance of <see cref="AdministrationDomainName"/> from the specified tagged object.
+	/// </summary>
+	/// <param name="taggedObject">The tagged object to get an instance of <see cref="AdministrationDomainName"/> from.</param>
+	/// <param name="declaredExplicit">Whether the tagged object is declared explicit.</param>
+	/// <returns>An instance of <see cref="AdministrationDomainName"/>.</returns>
 	public static AdministrationDomainName GetInstance( Asn1TaggedObject taggedObject, bool declaredExplicit ) {
 		return GetInstanceFromChoice( taggedObject, declaredExplicit, GetInstance );
 	}
+
 	internal static TChoice GetInstanceFromChoice<TChoice>(
 		Asn1TaggedObject taggedObject,
 		bool declaredExplicit,
@@ -87,19 +119,30 @@ public class AdministrationDomainName
 	}
 
 
+	/// <summary>
+	/// Gets the X.121 code for the ADMD.
+	/// </summary>
 	public virtual DerNumericString? X121Code => contents is DerNumericString x ? x : null;
+
+	/// <summary>
+	/// Gets the ISO 3166 code for the ADMD.
+	/// </summary>
 	public virtual DerPrintableString? ISO3166Code => contents is DerPrintableString x ? x : null;
+
+	/// <summary>
+	/// Gets the country code for the ADMD.
+	/// </summary>
 	public virtual DerPrintableString? CountryCode => ISO3166Code;
 
+	/// <inheritdoc/>
 	public override Asn1Object ToAsn1Object() {
 		return (Asn1Object)contents;
 	}
 
-	/**
-	 * Returns the stored <code>string</code> object.
-	 *
-	 * @return the stored text as a <code>string</code>.
-	 */
+	/// <summary>
+	/// Gets the string representation of the ADMD.
+	/// </summary>
+	/// <returns>The string representation of the ADMD.</returns>
 	public string GetString() {
 		return contents.GetString();
 	}

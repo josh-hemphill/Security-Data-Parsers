@@ -1,0 +1,47 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<!-- See https://aka.ms/dotnet/msbuild/customize for more details on customizing your build -->
+	<PropertyGroup>
+		<SolutionRootNamespace>SecurityDataParsers</SolutionRootNamespace>
+		<RootNamespace>$(SolutionRootNamespace).$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<OutputPath>dist</OutputPath>
+		<PublishDir>dist</PublishDir>
+		<PublishRelease>true</PublishRelease>
+		<NoWarn>$(NoWarn);IDE0022;IDE0011</NoWarn>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+	</PropertyGroup>
+	<Choose>
+		<When
+			Condition="$(MSBuildProjectName.EndsWith('.Test')) OR $(MSBuildProjectName)=='DocsGenerator'">
+			<PropertyGroup>
+
+			</PropertyGroup>
+		</When>
+		<Otherwise>
+			<PropertyGroup>
+				<PackageId>$(RootNamespace)</PackageId>
+				<GenerateDocumentationFile>true</GenerateDocumentationFile>
+				<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+				<Authors>josh-hemphill</Authors>
+				<Copyright>Copyright © Joshua Hemphill (2023)</Copyright>
+				<PackageReadmeFile>README.md</PackageReadmeFile>
+				<PackageLicenseExpression>MIT</PackageLicenseExpression>
+				<RepoUrl>https://github.com/josh-hemphill/Security-Data-Parsers</RepoUrl>
+				<RepositoryUrl>$(RepoUrl)</RepositoryUrl>
+				<PackageProjectUrl>$(RepoUrl)/blob/master/$(MSBuildProjectName)</PackageProjectUrl>
+				<PackageIcon>icon.png</PackageIcon>
+				<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+				<PackageReleaseNotes>CHANGELOG.md</PackageReleaseNotes>
+				<DocsGenName>DocsGenerator</DocsGenName>
+				<DocsGenProj>$([System.IO.Path]::Combine($(SolutionDir),$(DocsGenName),$(OutputPath)))</DocsGenProj>
+			</PropertyGroup>
+			<ItemGroup>
+				<None Include="icon.png" Pack="true" PackagePath="" />
+				<None Include="README.md" Pack="true" PackagePath="\" />
+			</ItemGroup>
+		</Otherwise>
+	</Choose>
+</Project>

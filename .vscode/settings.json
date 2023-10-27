@@ -1,12 +1,15 @@
 {
 	"dotnet.defaultSolution": "SecurityDataParsers.sln",
 	"cSpell.words": [
+		"Codecov",
 		"FASC",
 		"FASCN",
 		"keygen",
 		"Newtonsoft",
 		"Oids",
+		"strs",
 		"Teletex",
+		"Unbrowsable",
 		"Xunit"
 	],
 	"terminal.integrated.automationProfile.windows": {

@@ -1,5 +1,5 @@
 ﻿using TestUtils;
-
+using SecurityDataParsers.FederalAgencySmartCredentialNumber;
 namespace FederalAgencySmartCredentialNumber.Test;
 
 public class SAN_Test {

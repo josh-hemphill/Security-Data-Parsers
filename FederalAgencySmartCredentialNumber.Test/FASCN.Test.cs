@@ -1,5 +1,6 @@
 
 using BinaryUtils;
+using SecurityDataParsers.FederalAgencySmartCredentialNumber;
 
 namespace FederalAgencySmartCredentialNumber.Test;
 

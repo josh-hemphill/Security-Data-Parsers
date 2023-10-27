@@ -1,24 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
 	<PropertyGroup>
-		<TargetFramework>net7.0</TargetFramework>
-		<ImplicitUsings>enable</ImplicitUsings>
-		<Nullable>enable</Nullable>
-		<OutputPath>dist</OutputPath>
-		<PublishDir>dist</PublishDir>
-		<PublishRelease>true</PublishRelease>
-		<NoWarn>$(NoWarn);IDE0022;IDE0011</NoWarn>
-		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
-		<RootNamespace>SecurityDataParsers.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
-		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-		<PackageId>SecurityDataParsers.$(AssemblyName)</PackageId>
 		<Title>Subject Alternative Name (SAN)</Title>
-		<Authors>josh-hemphill</Authors>
-		<Copyright>Copyright © Joshua Hemphill (2023)</Copyright>
-		<PackageProjectUrl>https://github.com/josh-hemphill/Security-Data-Parsers</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/josh-hemphill/Security-Data-Parsers</RepositoryUrl>
-		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<Description>A parser to extract all the data that the spec allows for from certificate SAN
+			data</Description>
 		<PackageTags>security,parser,binary,fascn,san,x400address,EdiPartyName</PackageTags>
 		<Version>1.0.1</Version>
 	</PropertyGroup>
@@ -30,17 +14,6 @@
 	<ItemGroup>
 		<ProjectReference
 			Include="..\FederalAgencySmartCredentialNumber\FederalAgencySmartCredentialNumber.csproj" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<Folder Include="X400Address\DomainDefined\" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<None Update="README.md">
-			<Pack>True</Pack>
-			<PackagePath>\</PackagePath>
-		</None>
 	</ItemGroup>
 
 	<Import Project="..\AsnUtils\AsnUtils.projitems" Label="Shared" />

@@ -4,10 +4,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SubjectAlternativeName", "SubjectAlternativeName\SubjectAlternativeName.csproj", "{85BD9843-2434-4D9D-850E-605A95A007E7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4AC78FDF-B1DC-49BA-9A26-E76676A55EF6} = {4AC78FDF-B1DC-49BA-9A26-E76676A55EF6}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SubjectAlternativeName.Test", "SubjectAlternativeName.Test\SubjectAlternativeName.Test.csproj", "{1D83643C-51F3-4A5F-894B-5E49FB84A9ED}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FederalAgencySmartCredentialNumber", "FederalAgencySmartCredentialNumber\FederalAgencySmartCredentialNumber.csproj", "{F2E88E20-F85C-4A69-AF22-716D0FE318AE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4AC78FDF-B1DC-49BA-9A26-E76676A55EF6} = {4AC78FDF-B1DC-49BA-9A26-E76676A55EF6}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FederalAgencySmartCredentialNumber.Test", "FederalAgencySmartCredentialNumber.Test\FederalAgencySmartCredentialNumber.Test.csproj", "{BEDEEFA4-B534-4D42-A8FD-A1D96DD294B9}"
 EndProject
@@ -16,6 +22,13 @@ EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "AsnUtils", "AsnUtils\AsnUtils.shproj", "{F7F818DF-516A-4145-A185-7087D233D022}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "TestUtils", "TestUtils\TestUtils.shproj", "{862B3065-FCA4-48ED-ABB3-4E09DBBDCB31}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{08CF0BBB-EF55-49D6-AC49-9832797CEA90}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocsGenerator", "DocsGenerator\DocsGenerator.csproj", "{4AC78FDF-B1DC-49BA-9A26-E76676A55EF6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +52,10 @@ Global
 		{BEDEEFA4-B534-4D42-A8FD-A1D96DD294B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BEDEEFA4-B534-4D42-A8FD-A1D96DD294B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BEDEEFA4-B534-4D42-A8FD-A1D96DD294B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AC78FDF-B1DC-49BA-9A26-E76676A55EF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AC78FDF-B1DC-49BA-9A26-E76676A55EF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AC78FDF-B1DC-49BA-9A26-E76676A55EF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AC78FDF-B1DC-49BA-9A26-E76676A55EF6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

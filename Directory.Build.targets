@@ -1,0 +1,16 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<!-- See https://aka.ms/dotnet/msbuild/customize for more details on customizing your build -->
+	<PropertyGroup>
+		<DocsGenArgs>
+			$(MSBuildProjectName)
+			$(PackageProjectUrl)
+			$(SolutionDir)
+		</DocsGenArgs>
+	</PropertyGroup>
+
+	<Target Name="BuildDocs" AfterTargets="AfterBuild"
+		Condition="!($(MSBuildProjectName.EndsWith('.Test')) OR $(MSBuildProjectName)=='DocsGenerator')">
+		<Exec
+			Command="$([System.IO.Path]::Combine($(DocsGenProj),$(DocsGenName))).exe $(DocsGenArgs.Replace('%0A',' ').Replace('	',''))" />
+	</Target>
+</Project>

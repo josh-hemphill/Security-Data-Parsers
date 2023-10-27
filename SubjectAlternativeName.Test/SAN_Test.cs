@@ -1,4 +1,5 @@
 ﻿using TestUtils;
+using SecurityDataParsers.SubjectAlternativeName;
 namespace SubjectAlternativeName.Test;
 
 public class SAN_Test {

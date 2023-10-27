@@ -1,0 +1,330 @@
+﻿toc:
+  - name: SubjectAlternativeName
+    link: SubjectAlternativeName
+    subfolderitems:
+    - name: SecurityDataParsers.SubjectAlternativeName
+      link: SecurityDataParsers.SubjectAlternativeNameNamespace
+      subfolderitems:
+      - name: EdiPartyName
+        link: SecurityDataParsers.SubjectAlternativeName/EdiPartyName
+        subfolderitems:
+        - name: GetInstance
+          link: SecurityDataParsers.SubjectAlternativeName/EdiPartyName/GetInstance
+        - name: ToAsn1Object
+          link: SecurityDataParsers.SubjectAlternativeName/EdiPartyName/ToAsn1Object
+        - name: EdiPartyName
+          link: SecurityDataParsers.SubjectAlternativeName/EdiPartyName/EdiPartyName
+        - name: PartyName
+          link: SecurityDataParsers.SubjectAlternativeName/EdiPartyName/PartyName
+        - name: NameAssigner
+          link: SecurityDataParsers.SubjectAlternativeName/EdiPartyName/NameAssigner
+      - name: SAN
+        link: SecurityDataParsers.SubjectAlternativeName/SAN
+        subfolderitems:
+        - name: ParseKnownFields
+          link: SecurityDataParsers.SubjectAlternativeName/SAN/ParseKnownFields
+        - name: SAN
+          link: SecurityDataParsers.SubjectAlternativeName/SAN/SAN
+        - name: First
+          link: SecurityDataParsers.SubjectAlternativeName/SAN/First
+        - name: otherNames
+          link: SecurityDataParsers.SubjectAlternativeName/SAN/otherNames
+        - name: rfc822Names
+          link: SecurityDataParsers.SubjectAlternativeName/SAN/rfc822Names
+        - name: dnsNames
+          link: SecurityDataParsers.SubjectAlternativeName/SAN/dnsNames
+        - name: x400Addresses
+          link: SecurityDataParsers.SubjectAlternativeName/SAN/x400Addresses
+        - name: directoryNames
+          link: SecurityDataParsers.SubjectAlternativeName/SAN/directoryNames
+        - name: ediPartyNames
+          link: SecurityDataParsers.SubjectAlternativeName/SAN/ediPartyNames
+        - name: uniformResourceIdentifiers
+          link: SecurityDataParsers.SubjectAlternativeName/SAN/uniformResourceIdentifiers
+        - name: iPAddresses
+          link: SecurityDataParsers.SubjectAlternativeName/SAN/iPAddresses
+        - name: registeredIDs
+          link: SecurityDataParsers.SubjectAlternativeName/SAN/registeredIDs
+      - name: SAN.OtherNames
+        link: SecurityDataParsers.SubjectAlternativeName/SAN.OtherNames
+        subfolderitems:
+        - name: OtherNames
+          link: SecurityDataParsers.SubjectAlternativeName/SAN.OtherNames/OtherNames
+        - name: FASCNs
+          link: SecurityDataParsers.SubjectAlternativeName/SAN.OtherNames/FASCNs
+        - name: principalNames
+          link: SecurityDataParsers.SubjectAlternativeName/SAN.OtherNames/principalNames
+        - name: unknown
+          link: SecurityDataParsers.SubjectAlternativeName/SAN.OtherNames/unknown
+      - name: SAN.Firsts
+        link: SecurityDataParsers.SubjectAlternativeName/SAN.Firsts
+        subfolderitems:
+        - name: FASCN
+          link: SecurityDataParsers.SubjectAlternativeName/SAN.Firsts/FASCN
+        - name: PrincipalName
+          link: SecurityDataParsers.SubjectAlternativeName/SAN.Firsts/PrincipalName
+        - name: Rfc822Name
+          link: SecurityDataParsers.SubjectAlternativeName/SAN.Firsts/Rfc822Name
+        - name: DnsName
+          link: SecurityDataParsers.SubjectAlternativeName/SAN.Firsts/DnsName
+        - name: X400Address
+          link: SecurityDataParsers.SubjectAlternativeName/SAN.Firsts/X400Address
+        - name: DirectoryName
+          link: SecurityDataParsers.SubjectAlternativeName/SAN.Firsts/DirectoryName
+        - name: EdiPartyName
+          link: SecurityDataParsers.SubjectAlternativeName/SAN.Firsts/EdiPartyName
+        - name: UniformResourceIdentifier
+          link: SecurityDataParsers.SubjectAlternativeName/SAN.Firsts/UniformResourceIdentifier
+        - name: IPAddress
+          link: SecurityDataParsers.SubjectAlternativeName/SAN.Firsts/IPAddress
+        - name: RegisteredID
+          link: SecurityDataParsers.SubjectAlternativeName/SAN.Firsts/RegisteredID
+    - name: SecurityDataParsers.SubjectAlternativeName.X400Address
+      link: SecurityDataParsers.SubjectAlternativeName.X400AddressNamespace
+      subfolderitems:
+      - name: DomainDefinedAttribute
+        link: SecurityDataParsers.SubjectAlternativeName.X400Address/DomainDefinedAttribute
+        subfolderitems:
+        - name: GetInstance
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address/DomainDefinedAttribute/GetInstance
+        - name: ToAsn1Object
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address/DomainDefinedAttribute/ToAsn1Object
+        - name: DomainDefinedAttribute
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address/DomainDefinedAttribute/DomainDefinedAttribute
+        - name: Type
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address/DomainDefinedAttribute/Type
+        - name: Value
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address/DomainDefinedAttribute/Value
+        - name: Count
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address/DomainDefinedAttribute/Count
+        - name: Item
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address/DomainDefinedAttribute/Item
+      - name: DomainDefinedAttributes
+        link: SecurityDataParsers.SubjectAlternativeName.X400Address/DomainDefinedAttributes
+        subfolderitems:
+        - name: GetInstance
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address/DomainDefinedAttributes/GetInstance
+        - name: ToAsn1Object
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address/DomainDefinedAttributes/ToAsn1Object
+        - name: DomainDefinedAttributes
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address/DomainDefinedAttributes/DomainDefinedAttributes
+        - name: Count
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address/DomainDefinedAttributes/Count
+        - name: Item
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address/DomainDefinedAttributes/Item
+      - name: ExtensionAttribute
+        link: SecurityDataParsers.SubjectAlternativeName.X400Address/ExtensionAttribute
+        subfolderitems:
+        - name: GetInstance
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address/ExtensionAttribute/GetInstance
+        - name: ToAsn1Object
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address/ExtensionAttribute/ToAsn1Object
+        - name: ExtensionAttribute
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address/ExtensionAttribute/ExtensionAttribute
+        - name: Type
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address/ExtensionAttribute/Type
+        - name: Value
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address/ExtensionAttribute/Value
+        - name: Count
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address/ExtensionAttribute/Count
+        - name: Item
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address/ExtensionAttribute/Item
+      - name: ExtensionAttributes
+        link: SecurityDataParsers.SubjectAlternativeName.X400Address/ExtensionAttributes
+        subfolderitems:
+        - name: GetInstance
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address/ExtensionAttributes/GetInstance
+        - name: ToAsn1Object
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address/ExtensionAttributes/ToAsn1Object
+        - name: ExtensionAttributes
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address/ExtensionAttributes/ExtensionAttributes
+        - name: Count
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address/ExtensionAttributes/Count
+        - name: Item
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address/ExtensionAttributes/Item
+      - name: ORAddress
+        link: SecurityDataParsers.SubjectAlternativeName.X400Address/ORAddress
+        subfolderitems:
+        - name: GetInstance
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address/ORAddress/GetInstance
+        - name: ToAsn1Object
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address/ORAddress/ToAsn1Object
+        - name: ORAddress
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address/ORAddress/ORAddress
+        - name: standardAttributes
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address/ORAddress/standardAttributes
+        - name: domainDefinedAttributes
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address/ORAddress/domainDefinedAttributes
+        - name: extensionAttributes
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address/ORAddress/extensionAttributes
+      - name: StandardAttributes
+        link: SecurityDataParsers.SubjectAlternativeName.X400Address/StandardAttributes
+        subfolderitems:
+        - name: GetInstance
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address/StandardAttributes/GetInstance
+        - name: ToAsn1Object
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address/StandardAttributes/ToAsn1Object
+        - name: StandardAttributes
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address/StandardAttributes/StandardAttributes
+        - name: countryName
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address/StandardAttributes/countryName
+        - name: administrationDomainName
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address/StandardAttributes/administrationDomainName
+        - name: networkAddress
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address/StandardAttributes/networkAddress
+        - name: terminalIdentifier
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address/StandardAttributes/terminalIdentifier
+        - name: privateDomainName
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address/StandardAttributes/privateDomainName
+        - name: organizationName
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address/StandardAttributes/organizationName
+        - name: numericUserIdentifier
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address/StandardAttributes/numericUserIdentifier
+        - name: personalName
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address/StandardAttributes/personalName
+        - name: organizationalUnitNames
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address/StandardAttributes/organizationalUnitNames
+    - name: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard
+      link: SecurityDataParsers.SubjectAlternativeName.X400Address.StandardNamespace
+      subfolderitems:
+      - name: AdministrationDomainName
+        link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/AdministrationDomainName
+        subfolderitems:
+        - name: GetInstance
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/AdministrationDomainName/GetInstance
+        - name: ToAsn1Object
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/AdministrationDomainName/ToAsn1Object
+        - name: GetString
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/AdministrationDomainName/GetString
+        - name: AdministrationDomainName
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/AdministrationDomainName/AdministrationDomainName
+        - name: X121Code
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/AdministrationDomainName/X121Code
+        - name: ISO3166Code
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/AdministrationDomainName/ISO3166Code
+        - name: CountryCode
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/AdministrationDomainName/CountryCode
+        - name: AdministrationDomainNameMaxLength
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/AdministrationDomainName/AdministrationDomainNameMaxLength
+        - name: ContentTypeNumericString
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/AdministrationDomainName/ContentTypeNumericString
+        - name: ContentTypePrintableString
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/AdministrationDomainName/ContentTypePrintableString
+      - name: CountryName
+        link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/CountryName
+        subfolderitems:
+        - name: GetInstance
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/CountryName/GetInstance
+        - name: ToAsn1Object
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/CountryName/ToAsn1Object
+        - name: GetString
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/CountryName/GetString
+        - name: CountryName
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/CountryName/CountryName
+        - name: X121Code
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/CountryName/X121Code
+        - name: ISO3166Code
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/CountryName/ISO3166Code
+        - name: CountryCode
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/CountryName/CountryCode
+        - name: NumericLength
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/CountryName/NumericLength
+        - name: PrintableLength
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/CountryName/PrintableLength
+      - name: NetworkAddress
+        link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/NetworkAddress
+        subfolderitems:
+        - name: GetInstance
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/NetworkAddress/GetInstance
+        - name: ToAsn1Object
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/NetworkAddress/ToAsn1Object
+        - name: GetString
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/NetworkAddress/GetString
+        - name: NetworkAddress
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/NetworkAddress/NetworkAddress
+        - name: CanBeBaseAddress
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/NetworkAddress/CanBeBaseAddress
+        - name: CanBeExtendedAddress
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/NetworkAddress/CanBeExtendedAddress
+        - name: AddressMaxLength
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/NetworkAddress/AddressMaxLength
+        - name: ExtendedMaxLength
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/NetworkAddress/ExtendedMaxLength
+      - name: OrganizationalUnitNames
+        link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/OrganizationalUnitNames
+        subfolderitems:
+        - name: GetInstance
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/OrganizationalUnitNames/GetInstance
+        - name: ToAsn1Object
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/OrganizationalUnitNames/ToAsn1Object
+        - name: OrganizationalUnitNames
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/OrganizationalUnitNames/OrganizationalUnitNames
+        - name: Count
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/OrganizationalUnitNames/Count
+        - name: Item
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/OrganizationalUnitNames/Item
+      - name: OrganizationName
+        link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/OrganizationName
+        subfolderitems:
+        - name: GetInstance
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/OrganizationName/GetInstance
+        - name: ToAsn1Object
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/OrganizationName/ToAsn1Object
+        - name: GetString
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/OrganizationName/GetString
+        - name: OrganizationName
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/OrganizationName/OrganizationName
+        - name: CanBeOrgName
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/OrganizationName/CanBeOrgName
+        - name: CanBeTeletex
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/OrganizationName/CanBeTeletex
+        - name: OrgMaxLength
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/OrganizationName/OrgMaxLength
+        - name: TeletexOrgMaxLength
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/OrganizationName/TeletexOrgMaxLength
+      - name: PersonalName
+        link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/PersonalName
+        subfolderitems:
+        - name: GetInstance
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/PersonalName/GetInstance
+        - name: GetFirst
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/PersonalName/GetFirst
+        - name: GetTypesAndValues
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/PersonalName/GetTypesAndValues
+        - name: ToAsn1Object
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/PersonalName/ToAsn1Object
+        - name: PersonalName
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/PersonalName/PersonalName
+        - name: Surname
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/PersonalName/Surname
+        - name: GivenName
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/PersonalName/GivenName
+        - name: Initials
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/PersonalName/Initials
+        - name: GenerationQualifier
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/PersonalName/GenerationQualifier
+        - name: Count
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/PersonalName/Count
+      - name: PrivateDomainName
+        link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/PrivateDomainName
+        subfolderitems:
+        - name: GetInstance
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/PrivateDomainName/GetInstance
+        - name: ToAsn1Object
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/PrivateDomainName/ToAsn1Object
+        - name: GetString
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/PrivateDomainName/GetString
+        - name: PrivateDomainName
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/PrivateDomainName/PrivateDomainName
+        - name: X121Code
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/PrivateDomainName/X121Code
+        - name: ISO3166Code
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/PrivateDomainName/ISO3166Code
+        - name: CountryCode
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/PrivateDomainName/CountryCode
+        - name: ContentTypeNumericString
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/PrivateDomainName/ContentTypeNumericString
+        - name: ContentTypePrintableString
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/PrivateDomainName/ContentTypePrintableString
+        - name: PrivateDomainNameMaxLength
+          link: SecurityDataParsers.SubjectAlternativeName.X400Address.Standard/PrivateDomainName/PrivateDomainNameMaxLength

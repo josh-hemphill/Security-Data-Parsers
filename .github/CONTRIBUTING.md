@@ -34,7 +34,7 @@ This project and everyone participating in it is governed by [the repository's c
 
 This section guides you through submitting a bug report for SecurityDataParsers. Following these guidelines helps maintainers and the community understand your report 📝, reproduce the behavior 💻, and find related reports 🔎.
 
-Before creating bug reports, please check [this list](#before-submitting-a-bug-report) as you might find out that you don't need to create one. When you are creating a bug report, please [include as many details as possible](#how-do-i-submit-a-good-bug-report). Fill out [the required template](https://github.com/josh-hemphill/SecurityDataParsers/.github/.github/ISSUE_TEMPLATE/bug_report.md), the information it asks for helps us resolve issues faster.
+Before creating bug reports, please check [this list](#before-submitting-a-bug-report) as you might find out that you don't need to create one. When you are creating a bug report, please [include as many details as possible](#how-do-i-submit-a-good-bug-report). Fill out [the required template](https://github.com/josh-hemphill/Security-Data-Parsers/.github/.github/ISSUE_TEMPLATE/bug_report.md), the information it asks for helps us resolve issues faster.
 
 #### Before Submitting A Bug Report
 
@@ -71,7 +71,7 @@ Include details about your configuration and environment:
 
 This section guides you through submitting an enhancement suggestion for SecurityDataParsers, including completely new features and minor improvements to existing functionality. Following these guidelines helps maintainers and the community understand your suggestion :pencil: and find related suggestions :mag_right:.
 
-Before creating enhancement suggestions, please check [this list](#before-submitting-an-enhancement-suggestion) as you might find out that you don't need to create one. When you are creating an enhancement suggestion, please [include as many details as possible](#how-do-i-submit-a-good-enhancement-suggestion). Fill in [the template](https://github.com/josh-hemphill/SecurityDataParsers/.github/blob/master/.github/ISSUE_TEMPLATE/feature_request.md), including the steps that you imagine you would take if the feature you're requesting existed.
+Before creating enhancement suggestions, please check [this list](#before-submitting-an-enhancement-suggestion) as you might find out that you don't need to create one. When you are creating an enhancement suggestion, please [include as many details as possible](#how-do-i-submit-a-good-enhancement-suggestion). Fill in [the template](https://github.com/josh-hemphill/Security-Data-Parsers/.github/blob/master/.github/ISSUE_TEMPLATE/feature_request.md), including the steps that you imagine you would take if the feature you're requesting existed.
 
 #### Before Submitting An Enhancement Suggestion
 
@@ -102,7 +102,7 @@ While not perfect, number of comments is a reasonable proxy for impact a given c
 
 #### Local development
 
-For instructions on how to setup and run development, see the following [Development Guide](https://github.com/josh-hemphill/SecurityDataParsers/docs/development.md)
+For instructions on how to setup and run development, see the following [Development Guide](https://github.com/josh-hemphill/Security-Data-Parsers/docs/development.md)
 
 ### Pull Requests
 

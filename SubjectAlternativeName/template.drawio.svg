@@ -1,0 +1,33 @@
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="93px" height="124px" viewBox="-0.5 -0.5 93 124" content="&lt;mxfile&gt;&lt;diagram id=&quot;aRWdgRUExsEhR5bAHDjf&quot; name=&quot;Page-1&quot;&gt;jZRNb9swDIZ/ja+BbXVZdkyytDusxYAU6LFQLdomKouGrCTOfv2kmPLHggHLIbAevqJI+pUTsW/6Jyvb+pkU6CRPVZ+I70mebzbC/wdwHYBYrwdQWVQDyiZwxN/AMGV6QgXdQuiItMN2CQsyBgq3YNJauixlJenlqa2s4A4cC6nv6RsqV3NbX9KJ/wCs6nhylnKkkVHMoKulossMiUMi9pbIDU9NvwcdZhfnMux7/Ed0LMyCcf+zIR82nKU+cW/H7QuX5q6x35bQOLCHs88aRpclYjdWHhZKdjWElKlf1K7RUeQsfcKeNNlbJpGm68PWF7PT8gP0L+rQIRkfKyCc4ANnsA79qH/+JWhQqVDPKNhqrBYBOjmNxp8WX3ooRrJqzO/rbkNbTV8Fb66oLLGAVQfFyaK7rjQVn++tJedzhJZ2JWo96yD7kBnkIVErCzTVK7U+8LAJSjJupixvP+aPskEd7P4qa2ok0yPPOI0T2ZFVYGMSQwaicrgE4mvoqWuHBkvsbyXev3U2QpgV9DPELngCasDZq5dw9EGwI/lKZhteXyaDf2NUz70dnSz5TlVj6sl2/oGdF5eTw2+x2WdCHP4A&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs/>
+    <g>
+        <rect x="0" y="0" width="90" height="120" fill="none" stroke="none" pointer-events="all" transform="translate(2,3)" opacity="0.25"/>
+        <rect x="0" y="0" width="90" height="120" fill="none" stroke="none" pointer-events="all"/>
+        <path d="M 70.59 53.15 L 70.59 34.29 C 70.59 23.02 60.49 10.29 45.06 10.29 C 29.51 10.29 19.41 22.95 19.41 34.93 L 19.41 53.15 Z M 6.94 120 C 3.25 120 0 116.89 0 113.3 L 0 59.81 C 0 56.31 3.25 53.15 6.8 53.15 L 8.82 53.15 L 8.82 34.59 C 8.82 16.35 25.01 0 44.52 0 C 65.67 0 81.18 16.16 81.18 34.64 L 81.18 53.15 L 83.11 53.15 C 86.68 53.15 90 56.15 90 60.01 L 90 113.23 C 90 116.96 86.73 120 83.06 120 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="all" transform="translate(2,3)" opacity="0.25"/>
+        <path d="M 70.59 53.15 L 70.59 34.29 C 70.59 23.02 60.49 10.29 45.06 10.29 C 29.51 10.29 19.41 22.95 19.41 34.93 L 19.41 53.15 Z M 6.94 120 C 3.25 120 0 116.89 0 113.3 L 0 59.81 C 0 56.31 3.25 53.15 6.8 53.15 L 8.82 53.15 L 8.82 34.59 C 8.82 16.35 25.01 0 44.52 0 C 65.67 0 81.18 16.16 81.18 34.64 L 81.18 53.15 L 83.11 53.15 C 86.68 53.15 90 56.15 90 60.01 L 90 113.23 C 90 116.96 86.73 120 83.06 120 Z" fill="#1ba1e2" stroke="#006eaf" stroke-miterlimit="10" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 84px; margin-left: 45px;">
+                        <div data-drawio-colors="color: #ffffff; " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 37px; font-family: Tahoma; color: rgb(255, 255, 255); line-height: 1.2; pointer-events: all; white-space: nowrap;">
+                                SAN
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="45" y="95" fill="#ffffff" font-family="Tahoma" font-size="37px" text-anchor="middle">
+                    SAN
+                </text>
+            </switch>
+        </g>
+    </g>
+    <switch>
+        <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/>
+        <a transform="translate(0,-5)" xlink:href="https://www.diagrams.net/doc/faq/svg-export-text-problems" target="_blank">
+            <text text-anchor="middle" font-size="10px" x="50%" y="100%">
+                Text is not SVG - cannot display
+            </text>
+        </a>
+    </switch>
+</svg>

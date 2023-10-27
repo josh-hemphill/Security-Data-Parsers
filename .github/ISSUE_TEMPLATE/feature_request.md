@@ -9,7 +9,7 @@ assignees: 'josh-hemphill'
 
 <!--
 
-Have you read SecurityDataParsers's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/josh-hemphill/SecurityDataParsers/.github/CODE_OF_CONDUCT.md
+Have you read SecurityDataParsers's Code of Conduct? By filing an Issue, you are expected to comply with it, including treating everyone with respect: https://github.com/josh-hemphill/Security-Data-Parsers/.github/CODE_OF_CONDUCT.md
 
 -->
 
