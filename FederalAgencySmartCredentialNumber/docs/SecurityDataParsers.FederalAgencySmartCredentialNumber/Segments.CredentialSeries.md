@@ -15,6 +15,7 @@ public class CredentialSeries
 | [Digits](Segments.CredentialSeries/Digits.md) { get; set; } | Gets or sets the digits that make up the value of the credential series segment. |
 | [FieldName](Segments.CredentialSeries/FieldName.md) { get; } | Gets the name of the credential series field. |
 | [Length](Segments.CredentialSeries/Length.md) { get; } | Gets the length of the credential series segment. |
+| [AsTuple](Segments.CredentialSeries/AsTuple.md)() |  |
 
 ## See Also
 

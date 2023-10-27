@@ -15,6 +15,7 @@ public class OrganizationIdentifier
 | [Digits](Segments.OrganizationIdentifier/Digits.md) { get; set; } | Gets or sets the digits that make up the value of the organization identifier segment. |
 | [FieldName](Segments.OrganizationIdentifier/FieldName.md) { get; } | Gets the name of the organization identifier field. |
 | [Length](Segments.OrganizationIdentifier/Length.md) { get; } | Gets the length of the organization identifier segment. |
+| [AsTuple](Segments.OrganizationIdentifier/AsTuple.md)() |  |
 
 ## See Also
 

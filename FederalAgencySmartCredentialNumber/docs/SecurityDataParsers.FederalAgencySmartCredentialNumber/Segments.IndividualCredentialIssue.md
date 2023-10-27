@@ -15,6 +15,7 @@ public class IndividualCredentialIssue
 | [Digits](Segments.IndividualCredentialIssue/Digits.md) { get; set; } | Gets or sets the digits that make up the value of the individual credential issue segment. |
 | [FieldName](Segments.IndividualCredentialIssue/FieldName.md) { get; } | Gets the name of the individual credential issue field. |
 | [Length](Segments.IndividualCredentialIssue/Length.md) { get; } | Gets the length of the individual credential issue segment. |
+| [AsTuple](Segments.IndividualCredentialIssue/AsTuple.md)() |  |
 
 ## See Also
 

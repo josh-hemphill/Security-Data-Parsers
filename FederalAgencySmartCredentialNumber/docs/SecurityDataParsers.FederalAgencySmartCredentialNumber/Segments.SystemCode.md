@@ -15,6 +15,7 @@ public class SystemCode
 | [Digits](Segments.SystemCode/Digits.md) { get; set; } | Gets or sets the digits that make up the value of the system code segment. |
 | [FieldName](Segments.SystemCode/FieldName.md) { get; } | Gets the name of the system code field. |
 | [Length](Segments.SystemCode/Length.md) { get; } | Gets the length of the system code segment. |
+| [AsTuple](Segments.SystemCode/AsTuple.md)() |  |
 
 ## See Also
 

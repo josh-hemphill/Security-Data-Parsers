@@ -21,6 +21,7 @@ public static class Segments
 | interface [IEnumSegment](Segments.IEnumSegment.md) | Represents a segment of a Federal Agency Smart Credential Number that contains an enumerated value. |
 | class [IndividualCredentialIssue](Segments.IndividualCredentialIssue.md) | Represents a segment of a Federal Agency Smart Credential Number that contains an individual credential issue value. |
 | interface [ISegment](Segments.ISegment.md) | Represents a segment of a Federal Agency Smart Credential Number. |
+| interface [ITupleSegment&lt;T&gt;](Segments.ITupleSegment-1.md) | Represents a segment of a Federal Agency Smart Credential Number that will have its digits destructured. |
 | interface [IValueSegment](Segments.IValueSegment.md) | Represents a segment of a Federal Agency Smart Credential Number that contains a value. |
 | class [OrganizationalCategory](Segments.OrganizationalCategory.md) | Represents a segment of a Federal Agency Smart Credential Number that contains an organizational category value. |
 | class [OrganizationIdentifier](Segments.OrganizationIdentifier.md) | Represents a segment of a Federal Agency Smart Credential Number that contains an organization identifier value. |

@@ -15,6 +15,7 @@ public class CredentialNumber
 | [Digits](Segments.CredentialNumber/Digits.md) { get; set; } | Gets or sets the digits that make up the value of the credential number segment. |
 | [FieldName](Segments.CredentialNumber/FieldName.md) { get; } | Gets the name of the credential number field. |
 | [Length](Segments.CredentialNumber/Length.md) { get; } | Gets the length of the credential number segment. |
+| [AsTuple](Segments.CredentialNumber/AsTuple.md)() |  |
 
 ## See Also
 

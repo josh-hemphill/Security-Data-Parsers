@@ -15,6 +15,7 @@ public class PersonIdentifier
 | [Digits](Segments.PersonIdentifier/Digits.md) { get; set; } | Gets or sets the digits that make up the value of the person identifier segment. |
 | [FieldName](Segments.PersonIdentifier/FieldName.md) { get; } | Gets the name of the person identifier field. |
 | [Length](Segments.PersonIdentifier/Length.md) { get; } | Gets the length of the person identifier segment. |
+| [AsTuple](Segments.PersonIdentifier/AsTuple.md)() |  |
 
 ## See Also
 
