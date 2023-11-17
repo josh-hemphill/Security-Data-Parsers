@@ -1,16 +1,31 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+	<Choose>
+		<When Condition="'$(SolutionDir)' != '' AND '$(SolutionDir)' != '*Undefined*'">
+			<PropertyGroup>
+				<NormalizedRoot>$(SolutionDir)</NormalizedRoot>
+			</PropertyGroup>
+		</When>
+		<Otherwise>
+			<PropertyGroup>
+				<NormalizedRoot>$(ProjectDir)..\</NormalizedRoot>
+			</PropertyGroup>
+		</Otherwise>
+	</Choose>
+
 	<!-- See https://aka.ms/dotnet/msbuild/customize for more details on customizing your build -->
 	<PropertyGroup>
 		<DocsGenArgs>
 			$(MSBuildProjectName)
 			$(PackageProjectUrl)
-			$(SolutionDir)
+			$(NormalizedRoot)
 		</DocsGenArgs>
 	</PropertyGroup>
 
 	<Target Name="BuildDocs" AfterTargets="AfterBuild"
 		Condition="!($(MSBuildProjectName.EndsWith('.Test')) OR $(MSBuildProjectName)=='DocsGenerator')">
+		<Exec Command="echo $(NormalizedRoot)" />
 		<Exec
-			Command="dotnet $([System.IO.Path]::Combine($(DocsGenProj),$(DocsGenName))).dll -- $(DocsGenArgs.Replace('%0A',' ').Replace('	',''))" />
+			Command="dotnet $([System.IO.Path]::Combine($(NormalizedRoot),$(DocsGenProj),$(DocsGenName))).dll -- $(DocsGenArgs.Replace('%0A',' ').Replace('	',''))" />
 	</Target>
 </Project>

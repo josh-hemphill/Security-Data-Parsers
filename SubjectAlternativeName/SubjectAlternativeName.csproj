@@ -4,7 +4,7 @@
 		<Description>A parser to extract all the data that the spec allows for from certificate SAN
 			data</Description>
 		<PackageTags>security,parser,binary,fascn,san,x400address,EdiPartyName</PackageTags>
-		<Version>1.0.1</Version>
+		<Version>1.0.2</Version>
 	</PropertyGroup>
 
 	<ItemGroup>

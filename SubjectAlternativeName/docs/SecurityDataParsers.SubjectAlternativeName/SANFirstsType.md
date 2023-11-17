@@ -13,6 +13,7 @@ public record Firsts
 | [DirectoryName](SAN.Firsts/DirectoryName) { get; } | Gets the first directory name in the SAN extension. |
 | [DnsName](SAN.Firsts/DnsName) { get; } | Gets the first DNS name in the SAN extension. |
 | [EdiPartyName](SAN.Firsts/EdiPartyName) { get; } | Gets the first EDI party name in the SAN extension. |
+| [Email](SAN.Firsts/Email) { get; } | Alias for the first RFC 822 name in the SAN extension. |
 | [FASCN](SAN.Firsts/FASCN) { get; } | Gets the first Federal Agency Smart Credential Number (FASCN) value in the SAN extension. |
 | [IPAddress](SAN.Firsts/IPAddress) { get; } | Gets the first IP address in the SAN extension. |
 | [PrincipalName](SAN.Firsts/PrincipalName) { get; } | Gets the first principal name in the SAN extension. |

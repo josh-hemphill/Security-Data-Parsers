@@ -43,9 +43,7 @@ public class SAN {
 	/// </summary>
 	/// <param name="x509Extension">The X.509 extension value.</param>
 	public SAN( byte[] x509Extension ) {
-		Asn1OctetString altNames = Asn1OctetString.GetInstance( x509Extension );
-		Asn1Object asn1Object = X509ExtensionUtilities.FromExtensionValue( altNames );
-		ParseKnownFields( GeneralNames.GetInstance( asn1Object ) );
+		ParseKnownFields( GeneralNames.GetInstance( Asn1Object.FromByteArray( x509Extension ) ) );
 	}
 
 	/// <summary>
@@ -117,8 +115,8 @@ public class SAN {
 	/// </summary>
 	/// <param name="SANExtNames">The GeneralNames object that contains the SAN extension values.</param>
 	public void ParseKnownFields( GeneralNames SANExtNames ) {
-
-		foreach (GeneralName? gn in SANExtNames.GetNames()) {
+		GeneralName[] names = SANExtNames.GetNames();
+		foreach (GeneralName? gn in names) {
 			switch (gn.TagNo) {
 				case GeneralName.OtherName:
 					OtherName otherName = OtherName.GetInstance( gn.Name );
@@ -190,6 +188,10 @@ public class SAN {
 		/// Gets the first RFC 822 name in the SAN extension.
 		/// </summary>
 		public string? Rfc822Name => _SAN.rfc822Names.Count > 0 ? _SAN.rfc822Names.First() : null;
+		/// <summary>
+		/// Alias for the first RFC 822 name in the SAN extension.
+		/// </summary>
+		public string? Email => _SAN.rfc822Names.Count > 0 ? _SAN.rfc822Names.First() : null;
 
 		/// <summary>
 		/// Gets the first DNS name in the SAN extension.

@@ -1,8 +1,8 @@
 
+using System.Collections;
 using BinaryUtils;
-using SecurityDataParsers.FederalAgencySmartCredentialNumber;
 
-namespace FederalAgencySmartCredentialNumber.Test;
+namespace SecurityDataParsers.FederalAgencySmartCredentialNumber.Test;
 
 public class FederalAgencySmartCredentialNumberTest {
 	private static class SampleData {
@@ -33,65 +33,31 @@ public class FederalAgencySmartCredentialNumberTest {
 			public static readonly byte[] PersonOrOrganizationAssociationCategory = Binary.IntStrToByteArr( "2" );
 		}
 	}
-	[Fact]
-	public void BareFASCN() {
-		byte[] bareFASCN = SampleData.ExampleVariationData.bareFASCN;
+	public class TestDataGenerator : IEnumerable<object[]> {
+		private readonly List<object[]> _data = new() {
+			new object[] {SampleData.ExampleVariationData.bareFASCN},
+			new object[] {SampleData.ExampleVariationData.paddedFASCN},
+			new object[] {SampleData.ExampleVariationData.paddedOnlyStartFASCN},
+			new object[] {SampleData.ExampleVariationData.paddedOnlyEndFASCN}
+		};
 
-		FASCN bare = new( bareFASCN );
+		public IEnumerator<object[]> GetEnumerator() => _data.GetEnumerator();
 
-		Assert.Equal( bare.agencyCode.Digits, SampleData.FieldValues.AgencyCode );
-		Assert.Equal( bare.systemCode.Digits, SampleData.FieldValues.SystemCode );
-		Assert.Equal( bare.credentialNumber.Digits, SampleData.FieldValues.CredentialNumber );
-		Assert.Equal( bare.credentialSeries.Digits, SampleData.FieldValues.CredentialSeries );
-		Assert.Equal( bare.individualCredentialIssue.Digits, SampleData.FieldValues.IndividualCredentialIssue );
-		Assert.Equal( bare.personIdentifier.Digits, SampleData.FieldValues.PersonIdentifier );
-		Assert.Equal( bare.organizationalCategory.Digits, SampleData.FieldValues.OrganizationalCategory );
-		Assert.Equal( bare.organizationIdentifier.Digits, SampleData.FieldValues.OrganizationIdentifier );
-		Assert.Equal( bare.personOrOrganizationAssociationCategory.Digits, SampleData.FieldValues.PersonOrOrganizationAssociationCategory );
+		IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
 	}
-	[Fact]
-	public void PaddedFASCN() {
-		byte[] paddedFASCN = SampleData.ExampleVariationData.paddedFASCN;
-		FASCN padded = new( paddedFASCN );
+	[Theory]
+	[ClassData( typeof( TestDataGenerator ) )]
+	public void FASCN_BitOffsets( byte[] src ) {
+		FASCN fascn = new( src );
 
-		Assert.Equal( padded.agencyCode.Digits, SampleData.FieldValues.AgencyCode );
-		Assert.Equal( padded.systemCode.Digits, SampleData.FieldValues.SystemCode );
-		Assert.Equal( padded.credentialNumber.Digits, SampleData.FieldValues.CredentialNumber );
-		Assert.Equal( padded.credentialSeries.Digits, SampleData.FieldValues.CredentialSeries );
-		Assert.Equal( padded.individualCredentialIssue.Digits, SampleData.FieldValues.IndividualCredentialIssue );
-		Assert.Equal( padded.personIdentifier.Digits, SampleData.FieldValues.PersonIdentifier );
-		Assert.Equal( padded.organizationalCategory.Digits, SampleData.FieldValues.OrganizationalCategory );
-		Assert.Equal( padded.organizationIdentifier.Digits, SampleData.FieldValues.OrganizationIdentifier );
-		Assert.Equal( padded.personOrOrganizationAssociationCategory.Digits, SampleData.FieldValues.PersonOrOrganizationAssociationCategory );
-	}
-	[Fact]
-	public void PaddedOnlyStartFASCN() {
-		byte[] paddedOnlyStartFASCN = SampleData.ExampleVariationData.paddedOnlyStartFASCN;
-		FASCN paddedOnlyStart = new( paddedOnlyStartFASCN );
-
-		Assert.Equal( paddedOnlyStart.agencyCode.Digits, SampleData.FieldValues.AgencyCode );
-		Assert.Equal( paddedOnlyStart.systemCode.Digits, SampleData.FieldValues.SystemCode );
-		Assert.Equal( paddedOnlyStart.credentialNumber.Digits, SampleData.FieldValues.CredentialNumber );
-		Assert.Equal( paddedOnlyStart.credentialSeries.Digits, SampleData.FieldValues.CredentialSeries );
-		Assert.Equal( paddedOnlyStart.individualCredentialIssue.Digits, SampleData.FieldValues.IndividualCredentialIssue );
-		Assert.Equal( paddedOnlyStart.personIdentifier.Digits, SampleData.FieldValues.PersonIdentifier );
-		Assert.Equal( paddedOnlyStart.organizationalCategory.Digits, SampleData.FieldValues.OrganizationalCategory );
-		Assert.Equal( paddedOnlyStart.organizationIdentifier.Digits, SampleData.FieldValues.OrganizationIdentifier );
-		Assert.Equal( paddedOnlyStart.personOrOrganizationAssociationCategory.Digits, SampleData.FieldValues.PersonOrOrganizationAssociationCategory );
-	}
-	[Fact]
-	public void PaddedOnlyEndFASCN() {
-		byte[] paddedOnlyEndFASCN = SampleData.ExampleVariationData.paddedOnlyEndFASCN;
-		FASCN paddedOnlyEnd = new( paddedOnlyEndFASCN );
-
-		Assert.Equal( paddedOnlyEnd.agencyCode.Digits, SampleData.FieldValues.AgencyCode );
-		Assert.Equal( paddedOnlyEnd.systemCode.Digits, SampleData.FieldValues.SystemCode );
-		Assert.Equal( paddedOnlyEnd.credentialNumber.Digits, SampleData.FieldValues.CredentialNumber );
-		Assert.Equal( paddedOnlyEnd.credentialSeries.Digits, SampleData.FieldValues.CredentialSeries );
-		Assert.Equal( paddedOnlyEnd.individualCredentialIssue.Digits, SampleData.FieldValues.IndividualCredentialIssue );
-		Assert.Equal( paddedOnlyEnd.personIdentifier.Digits, SampleData.FieldValues.PersonIdentifier );
-		Assert.Equal( paddedOnlyEnd.organizationalCategory.Digits, SampleData.FieldValues.OrganizationalCategory );
-		Assert.Equal( paddedOnlyEnd.organizationIdentifier.Digits, SampleData.FieldValues.OrganizationIdentifier );
-		Assert.Equal( paddedOnlyEnd.personOrOrganizationAssociationCategory.Digits, SampleData.FieldValues.PersonOrOrganizationAssociationCategory );
+		Assert.Equal( fascn.agencyCode.Digits, SampleData.FieldValues.AgencyCode );
+		Assert.Equal( fascn.systemCode.Digits, SampleData.FieldValues.SystemCode );
+		Assert.Equal( fascn.credentialNumber.Digits, SampleData.FieldValues.CredentialNumber );
+		Assert.Equal( fascn.credentialSeries.Digits, SampleData.FieldValues.CredentialSeries );
+		Assert.Equal( fascn.individualCredentialIssue.Digits, SampleData.FieldValues.IndividualCredentialIssue );
+		Assert.Equal( fascn.personIdentifier.Digits, SampleData.FieldValues.PersonIdentifier );
+		Assert.Equal( fascn.organizationalCategory.Digits, SampleData.FieldValues.OrganizationalCategory );
+		Assert.Equal( fascn.organizationIdentifier.Digits, SampleData.FieldValues.OrganizationIdentifier );
+		Assert.Equal( fascn.personOrOrganizationAssociationCategory.Digits, SampleData.FieldValues.PersonOrOrganizationAssociationCategory );
 	}
 }

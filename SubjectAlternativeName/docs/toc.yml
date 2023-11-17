@@ -65,6 +65,8 @@
           link: SecurityDataParsers.SubjectAlternativeName/SAN.Firsts/PrincipalName
         - name: Rfc822Name
           link: SecurityDataParsers.SubjectAlternativeName/SAN.Firsts/Rfc822Name
+        - name: Email
+          link: SecurityDataParsers.SubjectAlternativeName/SAN.Firsts/Email
         - name: DnsName
           link: SecurityDataParsers.SubjectAlternativeName/SAN.Firsts/DnsName
         - name: X400Address
